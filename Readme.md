@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ксения Субботина](https://up.htmlacademy.ru/htmlcss/22/user/823515).
-* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
+* Наставник: [Дмитрий Половков].
 
 ---
 
