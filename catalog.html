@@ -9,7 +9,7 @@
 
 <!--логотип сайта-->
     <div class="logo">
-      <a class="main-heder-logo">
+      <a class="main-heder-logo" href="index.html">
         <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип городка Седона">
       </a>
     </div>
@@ -26,15 +26,16 @@
       </header>
 <!---->
       <main class="container">
-        <h1 class="visualli-hidden">Гостиницы Седоны</h1>
+        <h1 class="visually-hidden">Гостиницы Седоны</h1>
 <!--раздел с фильтрами-->
         <section class="filters">
-          <h2 class="visualli-hidden">Фильтры поиска гостиницы</h2>
+          <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+          <span class="button filters-button">Показать</span>
           <!--здесь будут формы-->
         </section>
 <!--раздел сортировки-->
         <section class="sorting">
-          <h2 class="visualli hidden">Сортировка</h2>
+          <h2 class="visually hidden">Сортировка</h2>
           <p class="sorting-h3">Найдено:</p> <!--здесь совсем неуверена-->
           <ul class="breadcrambs">
             <li>Сортировка:</li>
@@ -43,3 +44,22 @@
             <li><a href="#">по рейтингу</a></li>
           </ul>
         </section>
+<!--перечень гостиниц-->
+        <section class="hotels">
+          <h2 class="visually-hidden">Список найденных гостиниц</h2>
+          <ul class="hotel-list">
+            <li class="hotel-item">
+              <h3>
+                <a href="#">Amara Resort & SPA></a>
+              </h3>
+              <p>
+                <img src="#" width="" height="" alt="гостиница Amara Resort & SPA">
+              </p>
+              <p>Гостиница</p>
+              <p>от 4000 Р.</p>
+              <p class="hotel-item-info-reserved">
+                <a class="button" href="#"><b>Подробнее</b></a>
+                <a class="button" href="#"><b>Забронировать</b></a>
+              </p>
+              <p class="hotels-rating">рейтинг: 8,5</p>
+            </li>
