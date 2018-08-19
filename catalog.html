@@ -9,8 +9,8 @@
 
 
 <!--главная навигация сайта-->
-    <header class="main-header">
-      <nav class="site-navigation">
+  <header class="main-header">
+    <nav class="site-navigation">
       <!--логотип сайта-->
       <div class="logo">
         <a class="main-heder-logo" href="index.html">
@@ -26,75 +26,53 @@
      </nav>
    </header>
 <!---->
-      <main class="container">
-        <h1 class="visually-hidden">Гостиницы Седоны</h1>
+   <main class="container">
+    <h1 class="visually-hidden">Гостиницы Седоны</h1>
 <!--раздел с фильтрами-->
-        <section class="filters">
-          <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
-          <span class="button filters-button">Показать</span>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
+        <span class="button filters-button">Показать</span>
           <!--здесь будут формы-->
-        </section>
+      </section>
 <!--раздел сортировки-->
-        <section class="sorting">
-          <h2>Сортировка:</h2>
-          <p>Найдено:</p> 
-          <ul class="breadcrambs">
-            <li class="breadcrambs-selected">по цене</li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
-          </ul>
-        </section>
+    <section class="sorting">
+        <h2>Сортировка:</h2>
+        <p>Найдено:</p>
+        <ul class="breadcrambs">
+          <li class="breadcrambs-selected">по цене</li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по рейтингу</a></li>
+        </ul>
+      </section>
 <!--перечень гостиниц-->
-        <section class="hotels">
+        <article class="hotels">
           <h2 class="visually-hidden">Список найденных гостиниц</h2>
           <ul class="hotel-list">
             <li class="hotel-item">
-              <h3>
-                <a href="#">Amara Resort & SPA</a>
-              </h3>
               <p>
                 <img src="#" width="150" height="100" alt="гостиница Amara Resort & SPA">
               </p>
-              <p>Гостиница</p>
-              <p>от 4000 Р.</p>
-              <p class="hotel-item-info-reserved">
-                <a class="button" href="#"><b>Подробнее</b></a>
-                <a class="button" href="#"><b>Забронировать</b></a>
-              </p>
+
+              <div class="hotel-item-info-reserved">
+                <h3>
+                  <a href="#">Amara Resort & SPA</a>
+                </h3>
+                <p> Гостиница от 4000 Р.
+                <p>
+                  <a class="button" href="#"><b>Подробнее</b></a>
+                  <a class="button" href="#"><b>Забронировать</b></a>
+                </p>
+              </div>
+
+              <!--может так?
+              <div class="hotel-rating">
+              <p>рейтинг: 8,5</p>-->
               <p class="hotels-rating">рейтинг: 8,5</p>
             </li>
-            <li class="hotel-item">
-              <h3>
-                <a href="#">Desert Quail inn</a>
-              </h3>
-              <p>
-                <img src="#" width="150" height="100" alt="Мотель Desert Quail inn">
-              </p>
-              <p>Мотель</p>
-              <p>от 3000 Р.</p>
-              <p class="hotel-item-info-reserved">
-                <a class="button" href="#"><b>Подробнее</b></a>
-                <a class="button" href="#"><b>Забронировать</b></a>
-              </p>
-              <p class="hotels-rating">рейтинг: 8,9</p>
-            </li>
-            <li class="hotel-item">
-              <h3>
-                <a href="#">VILLAS AT POCO DIABLO</a>
-              </h3>
-              <p>
-                <img src="#" width="150" height="100" alt="Апартаменты VILLAS AT POCO DIABLO">
-              </p>
-              <p>Апартаменты</p>
-              <p>от 2000 Р.</p>
-              <p class="hotel-item-info-reserved">
-                <a class="button" href="#"><b>Подробнее</b></a>
-                <a class="button" href="#"><b>Забронировать</b></a>
-              </p>
-              <p class="hotels-rating">рейтинг: 9,2</p>
-            </li>
           </ul>
-        </section>
+
+        </article>
+
       </main>
 <!--футер-->
 <footer class="main-footer">
