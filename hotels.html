@@ -78,28 +78,32 @@
         </lable>     
       </li>
      </ul>
-
-
      </fieldset>
+<!--ползунок стоимости-->
+     <fieldset>
+       <legend> Стоимость в сутки (Р):</legend>
+       <output name="min-output">0</output>
+       <output name="max-output">3000</output>
+       <input type="range" id="min-input" min="0" max="3000" step="1">
+       <input type="range" id="max-input" min="0" max="3000" step="1">
+
+       <button type="submit" name="show">Показать</button>       
+     </fieldset>
+
  </form>
 </section>
-
+<!--Главное содержимое страницы-->
    <main class="container">
     <h1 class="visually-hidden">Гостиницы Седоны</h1>
-<!--раздел с фильтрами-->
-      <section class="filters">
-        <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
-        <span class="button filters-button">Показать</span>
-          <!--здесь будут формы-->
-      </section>
+
 <!--раздел сортировки-->
     <section class="sorting">
         <h2>Сортировка:</h2>
         <p>Найдено:</p>
         <ul class="breadcrambs">
           <li class="breadcrambs-selected">по цене</li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по рейтингу</a></li>
+          <li><a href="#" aria-label="Отсортировать по типу гостиницы">по типу</a></li>
+          <li><a href="#" aria-label="отсортировать по рейтингу гостиницы">по рейтингу</a></li>
         </ul>
       </section>
 <!--перечень гостиниц-->
