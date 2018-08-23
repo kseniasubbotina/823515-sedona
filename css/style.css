@@ -169,6 +169,23 @@ a {
 	background-color:#503e33;
 }
 
+/*стилизация полей формы*/
+.index-form input {
+	font:inherit;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+.index-form input:hover {
+	background-color: #ebebeb;
+}
+.index-form input:focus {
+	background-color: #ffffff;
+	border-color: #e5e5e5
+}
+
+
 /*стилизация кнопки НАЙТИ*/
 .reservation-button {
   font: inherit;
@@ -191,3 +208,4 @@ a {
 	color:#88b6d1;
 	background-color:#5496bd;
 }
+
