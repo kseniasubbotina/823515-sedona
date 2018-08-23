@@ -26,7 +26,6 @@ a {
 	background-color: #ffffff;
 }
 
-/*ПОЧЕМУ НЕ УБИРАЮТСЯ МАРКЕРЫ У КЛАСС quality-list*/
 .site-navigation-list,
 .causes-list,
 .quality-list{ 
@@ -39,12 +38,12 @@ a {
 	background-color:#ffffff;
 } 
 
-.site-navigation-list a:hover {
+.site-navigation-list a:hover,
+.site-navigation-list a:focus {
 	color: #a3c7de;
 }
-
-.site-navigation-list a:focus {
-	background-color: #a3c7de;
+.site-navigation-list a:active {
+	color: #b2b2b2;
 }
 
 /*стилизация основного содержимого сайта*/
@@ -60,13 +59,37 @@ a {
 
 /*ПОЧЕМУ НЕ ПОДКЛЮЧАЕТСЯ КАРТИНКА???*/
 .main-image {
-	background-color:#ffffff;
+	background-color:#8a7b81;
 	background-image: url(img/bg-photo-index-1200.jpg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
 /*стилизация раздела "причины"*/
+.causes{ 
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 400;
+
+	text-align: center;
+	background-color: #ffffff;
+ }
+
+.causes-item {
+	background-color: #eeeeee;
+}
+.causes-item h3,
+.quality-item h3 {
+	font-size:21px;
+ 	line-height: 26px;
+ 	color:#000000;
+ 	font-weight: 700; 
+
+ 	text-align: center;
+
+}
+/*
 .causes-list {
 	font-size: 14px;
 	line-height: 26px;
@@ -83,10 +106,11 @@ a {
  	font-size:21px;
  	line-height: 26px;
  	color:#000000;
- 	font-weight: 700; /*мне кажется, шрифт в этом разделе все еще худой*/
+ 	font-weight: 700; /*мне кажется, шрифт в этом разделе все еще худой
 
  	text-align: center;
-}
+} 
+*/
 
 .causes-item-picture,
 .causes-item-picture h3{
@@ -95,9 +119,75 @@ a {
 	background-color:#81b3d2;
 }
 
-/*К ЭТОМУ КЛАССУ ВООБЩЕ НИЧЕГО НЕ ПРИМЕНЯЕТСЯ*/
-.causes-list .quality-list {
+.quality-item {
 	background-color: #ffffff;
 }
- 
+/*стилизация раздела Бронирование*/
 
+.reservation {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 400;
+
+	text-align: center;
+
+	background-color: #ffffff;
+}
+
+.reservation h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.index-form {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+
+	background-color:#ffffff;
+}
+
+/*стилизация заголовка формы*/
+.index-form h3 {
+	font-size:21px;
+	line-height: 26px;
+	color:#ffffff;
+
+	background-color:#766357;
+} 
+
+/*состояние заголовка формы*/
+/*ВЫХОДИТ ОН ИНТЕРАКТИВНЫЙ???*/
+.index-form h3:hover,
+.index-form h3:focus {
+	color:#ffffff;
+	background-color:#604e43;
+}
+.index-form h3:active {
+	color:#857871;
+	background-color:#503e33;
+}
+
+/*стилизация кнопки НАЙТИ*/
+.reservation-button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+/*состояния для кнопки НАЙТИ*/
+.reservation-button:hover,
+.reservation-button:focus {
+	background-color:#669ec0;
+}
+.reservation-button:active {
+	color:#88b6d1;
+	background-color:#5496bd;
+}
