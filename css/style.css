@@ -26,6 +26,13 @@ a {
 	background-color: #ffffff;
 }
 
+/*ПОЧЕМУ НЕ УБИРАЮТСЯ МАРКЕРЫ У КЛАСС quality-list*/
+.site-navigation-list,
+.causes-list,
+.quality-list{ 
+	list-style: none;
+}
+
 .main-header .site-navigation-list a{
 	color:#000000;
 
@@ -39,4 +46,58 @@ a {
 .site-navigation-list a:focus {
 	background-color: #a3c7de;
 }
+
+/*стилизация основного содержимого сайта*/
+
+.container h1{
+	font-size: 21px;
+	line-height:26px
+	color:#000000;
+
+	text-align: center;
+	background-color:#ffffff;
+}
+
+/*ПОЧЕМУ НЕ ПОДКЛЮЧАЕТСЯ КАРТИНКА???*/
+.main-image {
+	background-color:#ffffff;
+	background-image: url(img/bg-photo-index-1200.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+/*стилизация раздела "причины"*/
+.causes-list {
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: 400;
+
+	text-align: center;
+
+	background-color: #eeeeee; 
+ }
+
+ .causes-list h3,
+ .quality-list h3 {
+ 	font-size:21px;
+ 	line-height: 26px;
+ 	color:#000000;
+ 	font-weight: 700; /*мне кажется, шрифт в этом разделе все еще худой*/
+
+ 	text-align: center;
+}
+
+.causes-item-picture,
+.causes-item-picture h3{
+	color: #ffffff;
+
+	background-color:#81b3d2;
+}
+
+/*К ЭТОМУ КЛАССУ ВООБЩЕ НИЧЕГО НЕ ПРИМЕНЯЕТСЯ*/
+.causes-list .quality-list {
+	background-color: #ffffff;
+}
+ 
 
