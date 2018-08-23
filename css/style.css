@@ -28,7 +28,8 @@ a {
 
 .site-navigation-list,
 .causes-list,
-.quality-list{ 
+.quality-list,
+.social-list { 
 	list-style: none;
 }
 
@@ -89,29 +90,6 @@ a {
  	text-align: center;
 
 }
-/*
-.causes-list {
-	font-size: 14px;
-	line-height: 26px;
-	color: #000000;
-	font-weight: 400;
-
-	text-align: center;
-
-	background-color: #eeeeee; 
- }
-
- .causes-list h3,
- .quality-list h3 {
- 	font-size:21px;
- 	line-height: 26px;
- 	color:#000000;
- 	font-weight: 700; /*мне кажется, шрифт в этом разделе все еще худой
-
- 	text-align: center;
-} 
-*/
-
 .causes-item-picture,
 .causes-item-picture h3{
 	color: #ffffff;
@@ -209,3 +187,33 @@ a {
 	background-color:#5496bd;
 }
 
+/*стилизация футера*/
+.main-footer {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+
+	color:#000000;
+	color: #000000;
+
+	background-color: rgb(254, 254, 254, 0.9);
+}
+
+.main-footer b {
+	font-size:21px;
+}
+
+/*стилизация кнопок соц сетей*/
+.footer-social a{
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+.footer-social a:hover, 
+.footer-social a:focus{
+	background-color:#669ec0;
+}
+
+.footer-social a:active {
+	color:#88b6d1;
+	background-color:#5496bd;
+}
