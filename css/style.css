@@ -201,19 +201,28 @@ a {
 
 .main-footer b {
 	font-size:21px;
+	text-align: left;
 }
 
 /*стилизация кнопок соц сетей*/
+.footer-social {
+	text-align: center;
+}
+
 .footer-social a{
 	color: #ffffff;
 	background-color: #81b3d2;
 }
+
 .footer-social a:hover, 
 .footer-social a:focus{
 	background-color:#669ec0;
 }
-
 .footer-social a:active {
 	color:#88b6d1;
 	background-color:#5496bd;
+}
+ /*Не выравнивает*/
+.footer-copyright p{
+	text-align: right;
 }
