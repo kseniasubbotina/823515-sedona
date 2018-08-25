@@ -1,3 +1,5 @@
+/*стилизация базовых элементов index.html*/
+/*эти стили встречаются чаще всего*/
 body {
   margin: 0;
   padding: 0;
@@ -8,4 +10,37 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+/*нет подчеркиваниям для ссылок*/
+a {
+	text-decoration: none;
+}
+/*здесь отменяется маркеровка всех списков*/
+.site-navigation-list {
+	list-style: none;
+}
+
+/*стилизация основной навигации*/
+/*СВОЙСТВА ТЕ ЖЕ ЧТО И В БОДИ. СТОИТ ДУБЛИРОВАТЬ?*/
+.site-navigation {
+	text-decoration: 14px;
+	line-height: 26px;
+	font-width:700px;
+	color:#000000
+	background-color:#ffffff;
+}
+
+/*цвет ссылок*/
+.site-navigation a{
+	color:#000000;
+}
+/*cсостояния для ссылок*/
+.site-navigation a:hover{
+	color: #a3c7de;
+}
+.site-navigation a:active {
+	color: #b2b2b2;
 }
