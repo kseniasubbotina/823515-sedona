@@ -19,7 +19,8 @@ a {
 	text-decoration: none;
 }
 /*здесь отменяется маркеровка всех списков*/
-.site-navigation-list {
+.site-navigation-list,
+.causes-list {
 	list-style: none;
 }
 
@@ -38,9 +39,53 @@ a {
 	color:#000000;
 }
 /*cсостояния для ссылок*/
-.site-navigation a:hover{
+.site-navigation a:hover {
 	color: #a3c7de;
 }
 .site-navigation a:active {
 	color: #b2b2b2;
+}
+
+/*стилизация главного заголовка*/
+/*ПОВТОРЯТЬ ПАРАМЕРТЫ  line-height, line-height, font-weight,color?*/
+.container h1 {
+	font-size: 21px;
+	text-align: center;
+}
+/*главное изображение на странице*/
+/*ПОЧЕМУ ОНО НЕ ЗАГРУЖАЕТСЯ?*/
+.main-image {
+  background-color: #6d676b;
+  background-image: url("img/bg-photo-index-1200.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/*раздел причины*/
+/*что общего во всем разделе*/
+.causes-item {
+	font-size:14px;
+	line-height: 21px;
+	font-weight:400;
+	color:#000000;
+	text-align: center;
+
+	background-color: #eeeeee;
+}
+.causes-item h3 {
+	font-size:21px;
+	line-height: 21px;
+	font-weight: 700;
+}
+
+/*а теперь различия*/
+/*стилизация 1-2 причин*/
+.causes-item-picture {
+	color:#ffffff;
+
+	background-color: #81b3d2;
+}
+/*стилизация списка подсписка причин*/
+.quality-item {
+	background-color:#ffffff;
 }
