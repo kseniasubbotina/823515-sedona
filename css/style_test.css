@@ -22,7 +22,8 @@ a {
 .site-navigation-list,
 .causes-list,
 .social-list,
-.breadcrambs {
+.breadcrambs,
+.hotels-list {
 	list-style: none;
 }
 
@@ -100,7 +101,7 @@ a {
 	font-size:30px;
 	line-height: 36px;
 }
-
+/*ДЛЯ НЕЕ НУЖНО ТЕНЬ СТИЛИЗОВАТЬ???*/
 /*стилизация формы бронирования*/
 /*все что общее*/
 .reservation-form {
@@ -229,6 +230,8 @@ li .navigation-selected {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight:700;
+
+	border-bottom: 1px #e5e5e5 solid;
 }
 /*что общего в хлебных крошках*/
 .breadcrambs {
@@ -255,4 +258,67 @@ li .navigation-selected {
 	color:#000000;
 }
 
+/*стилизация списка отелей*/
+/*что общее*/
+.hotels-list {
+	font-size:14px;
+	line-height:21px;
+	font-weight: 400;
+	color:#333333;
 
+	background-color: #ffffff;
+}
+.hotels-list a {
+	font-size:21px;
+	line-height:26px;
+	color:#000000;
+}
+/*состояния ссылок*/
+.hotel-header a:hover {
+	color:#81b3d2;
+}
+.hotel-header a:active {
+	color:#cacaca;
+}
+/*НУЖНО ЛЛИ ТАК СТИЛИЗОВАТЬ?*/
+.hotel-item {
+	border-bottom: 1px #e5e5e5 solid;
+}
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+}
+/*стилизация рейтинга отеля*/
+.hotels-rating {
+  font-size: 14px;
+  line-height: 21px;
+  color:#666666;
+  text-align: center;
+
+  background-color: #f2f2f2;
+}
+/*стилизация кнопок общая*/
+.hotel-btn a {
+	color:#ffffff;
+}
+/*кнопка подробнее и ее состояния*/
+.btn-info {
+	background-color:#81b3d2;
+}
+.btn-info:hover {
+	background-color: #669ec0;
+}
+.btn-info:active {
+	color:#82b2cf;
+	background-color:#5496bd;
+}
+/*кнопка заброн. и ее состояния*/
+.btn-reserv {
+	background-color: #766357;
+}
+.btn-reserv:hover {
+	background-color:#604e43;
+}
+.btn-reserv:active {
+	color:#75665e;
+	background-color:#503e33;
