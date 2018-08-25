@@ -28,7 +28,7 @@ a {
 /*стилизация основной навигации*/
 /*СВОЙСТВА ТЕ ЖЕ ЧТО И В БОДИ. СТОИТ ДУБЛИРОВАТЬ?*/
 .site-navigation {
-	text-decoration: 14px;
+	font-size: : 14px;
 	line-height: 26px;
 	font-width:700px;
 	color:#000000
@@ -101,6 +101,64 @@ a {
 }
 
 /*стилизация формы бронирования*/
+/*все что общее*/
+.reservation-form {
+	font: inherit;
+
+	background-color:#ffffff;
+}
+/*заголовок формы*/
+/*ЭТО ССЫЛКА? (РАЗ ЕСТЬ СОСТОЯНИЯ?)*/
+.reservation-form h3 {
+	font-size:21px;
+	line-height: 26px;
+	color:#ffffff;
+
+	background-color:#766357;
+}
+/*состояния для заголовка формы, или это должно быть ссылкой*/
+.reservation-form h3:hover {
+	background-color:#604e43;
+}
+.reservation-form h3:active {
+	color:#75665e;
+	background-color:#503e33;
+}
+/*стилизация инпутов*/
+.reservation-form input[type="text"],
+.reservation-form input[type="number"] {
+	background-color:#f2f2f2;
+	border: none;
+}
+/*состояния инпутов для ввода дат*/
+.reservation-form input[type="text"]:hover {
+	background-color: #ebebeb;
+}
+.reservation-form input[type="text"]:focus {
+	background-color: #ffffff;
+	border:1px #e5e5e5;
+} 
+/*стилизация кнопки*/
+.reservation-button {
+	font-size:21px;
+	line-height:26px;
+	font-weight: 700;
+	color:#ffffff;
+	text-align:center;
+	vertical-align: middle;
+
+	border:none;
+	background-color: #81b3d2;
+
+}
+/*состояния для кнопки*/
+.reservation-button:hover {
+	background-color: #669ec0;
+}
+.reservation-button:active {
+	color: #88b6d1;
+	background-color: #5496bd;
+}
 
 
 
