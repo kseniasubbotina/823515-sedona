@@ -21,7 +21,8 @@ a {
 /*здесь отменяется маркеровка всех списков*/
 .site-navigation-list,
 .causes-list,
-.social-list {
+.social-list,
+.breadcrambs {
 	list-style: none;
 }
 
@@ -160,9 +161,6 @@ a {
 	background-color: #5496bd;
 }
 
-
-
-
 /*стилизация футера*/
 /*то что общее*/
 .main-footer {
@@ -193,5 +191,68 @@ a {
 	background-color:#5496bd;
 }
 
+/*---------------здесь начинаетя стилизация страницы hotels----------------------*/
+
+/*цвет выбранной ссылки ГОСТИНИНЦЫ*/
+li .navigation-selected {
+	color:#766357;
+}
+
+/*стилизация группы фильтров*/
+/*стилизация изображения на задний план*/
+/*И ЗДЕСЬ ИЗОБРАЖЕНИЕ НЕ ЗАГРУЖАЕТСЯ*/
+.search-filters {
+	background-image: url("img/bg-photo-hotels-1200.jpg");
+	background-color: #6d676b;
+}
+.filters fieldset {
+	border: none;
+}
+/*шрифт для legend*/
+.filters legend {
+	font-size:16px;
+	line-height:21px;
+	color:#ffffff;
+}
+/*стилизация фильтров*/
+.filters ul {
+	font-size:14px
+	line-height:21px;
+	color:#ffffff;
+	list-style: none;
+}
+/*ползунок будет стилизован позже*/
+
+/*стилизация навигационной цепочки*/
+/*то что общее*/
+.sorting {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight:700;
+}
+/*что общего в хлебных крошках*/
+.breadcrambs {
+	font-size: 12px;
+	line-height:16px;
+	font-weight:400;
+	color:#e0e0e0;
+
+	background-color:#ffffff;
+}
+/*цвет активного состояния*/
+.breadcrambs-selected {
+	color:#81b3d2;
+}
+/*цвет неактивных ссылок*/
+.breadcrambs a {
+	color:#e0e0e0;
+}
+/*состояния ссылок*/
+.breadcrambs a:hover {
+	color:#81b3d2;
+}
+.breadcrambs a:active {
+	color:#000000;
+}
 
 
