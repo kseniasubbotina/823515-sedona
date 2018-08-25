@@ -93,30 +93,27 @@
 
       <!--форма бронирования-->
       
-      <div class="index-form">
-        <form class="reservation-form" method="post" action="htpps://echo.htmlacademy.ru">
-          <h3>Поиск гостиницы в Седоне</h3>
-          <label>
-            Дата заезда:
-            <input type="date" name="arrival-date" class="date">      
-          </label>
-          <label>
-            Дата выезда:
-            <input type="date" name="departure-date" class="date">
-          </label>
-          <label>       
-            Взрослые:       
-            <input type="number" name="adults" class="people">     
-          </label>
-          <label>       
-            Дети:       
-            <input type="number" name="children" class="people">     
-          </label>     
-          <button type="submit" class="reservation-button" href="#" aria-label="Нажмите, и мы подберем Вам место для ночлега">
-            Найти    
-          </button>        
-        </form>    
-      </div>  
+      <form class="reservation-form" method="post" action="htpps://echo.htmlacademy.ru">
+        <h3>Поиск гостиницы в Седоне</h3>
+        <label>
+          Дата заезда:
+          <input type="text" name="arrival-date" class="date" placeholder="24 апреля 2017">      
+        </label>
+        <label>
+          Дата выезда:
+          <input type="text" name="departure-date" class="date" placeholder="4 июля 2017">
+        <label>       
+          Взрослые:       
+          <input type="number" name="adults" class="people">     
+        </label>
+        <label>       
+          Дети:       
+          <input type="number" name="children" class="people">     
+        </label>     
+        <button type="submit" class="reservation-button" href="#" aria-label="Нажмите, и мы подберем Вам место для ночлега">
+          Найти    
+        </button>        
+      </form>    
     </section>
 
     <!--карта-->
@@ -128,7 +125,7 @@
 
   <!--футер-->
   <footer class="main-footer">
-    <b>#VISITSEDONA</b>
+    <p class="hashtag">#VISITSEDONA</p>
 
     <div class="footer-social">
       <ul class="social-list">

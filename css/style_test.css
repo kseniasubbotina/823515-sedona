@@ -20,7 +20,8 @@ a {
 }
 /*здесь отменяется маркеровка всех списков*/
 .site-navigation-list,
-.causes-list {
+.causes-list,
+.social-list {
 	list-style: none;
 }
 
@@ -88,4 +89,51 @@ a {
 /*стилизация списка подсписка причин*/
 .quality-item {
 	background-color:#ffffff;
+} 
+
+/*раздел бронирование*/
+.reservation {
+	text-align:center;
 }
+.reservation h2 {
+	font-size:30px;
+	line-height: 36px;
+}
+
+/*стилизация формы бронирования*/
+
+
+
+
+/*стилизация футера*/
+/*то что общее*/
+.main-footer {
+	color:#000000;
+	text-align:center;
+
+	background-color:rgba(254,254,254,0.9);
+}
+/*для хэштега*/
+.hashtag {
+	font-size:21px;
+	line-height: 26px;
+	font-weight: 700;
+}
+
+/*стилизация ссылок на соцсети*/
+.footer-social a {
+    color: #ffffff;
+    background-color:#81b3d2;
+}
+/*состояния соцсетей*/
+.footer-social a:hover {
+	color:#ffffff;
+	background-color:#669ec0;
+}
+.footer-social a:active {
+	color:#82b2cf;
+	background-color:#5496bd;
+}
+
+
+
