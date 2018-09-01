@@ -1,5 +1,3 @@
-/*стилизация базовых элементов index.html*/
-/*эти стили встречаются чаще всего*/
 body{
   margin: 0;
   padding: 0;
@@ -14,11 +12,10 @@ body{
   background-color: #ffffff;
 }
 
-/*нет подчеркиваниям для ссылок*/
 a {
 	text-decoration: none;
 }
-/*здесь отменяется маркеровка всех списков*/
+
 .site-navigation-list,
 .causes-list,
 .social-list,
@@ -27,25 +24,21 @@ a {
 	list-style: none;
 }
 
-/*стилизация основной навигации*/
-/*цвет ссылок*/
 .site-navigation-list a {
 	color: #000000;
 }
-/*cсостояния для ссылок*/
 .site-navigation-list a:hover {
-	color: #a3c7de;
+	color: #81b3d2;
 }
 .site-navigation-list a:active {
 	color: #b2b2b2;
 }
 
-/*стилизация главного заголовка*/
 .container h1 {
 	font-size: 21px;
 	text-align: center;
 }
-/*главное изображение на странице*/
+
 .main-image {
   background-color: #6d676b;
   background-image: url("../img/bg-photo-index-1200.jpg");
@@ -53,7 +46,6 @@ a {
   background-repeat: no-repeat;
 }
 
-/*раздел причины*/
 .causes {
 	font-weight: 400;
 	text-align: center;
@@ -68,42 +60,36 @@ a {
 	font-weight: 700;
 }
 
-/*стилизация 1-2 причин*/
 .causes-item-picture {
 	color: #ffffff;
 
 	background-color: #81b3d2;
 }
-/*стилизация списка подсписка причин*/
 .quality-item {
 	background-color: #ffffff;
 }
-/*раздел бронирование*/
+
 .reservation {
 	line-height: 24px;
 	font-weight: 400;
 	text-align:center;
 }
 .as-header {
-	font-weight: 700;
 	font-size: 30px;
 	line-height: 36px;
+	font-weight:700;
 }
-
-/*стилизация формы бронирования*/
 .reservation-form {
 	font-size:14px;
 	line-height:26px;
 	font-weight:700;
 }
-/*заголовок формы*/
 .reservation-form a {
 	font-size: 21px;
 	color:#ffffff;
 
 	background-color: #766357;
 }
-/*состояния для ссылки в заголовке формы*/
 .reservation-form a:hover {
 	background-color:#604e43;
 }
@@ -111,13 +97,11 @@ a {
 	color:#75665e;
 	background-color:#503e33;
 }
-/*стилизация инпутов*/
 .reservation-form input[type="text"],
 .reservation-form input[type="number"] {
 	background-color: #f2f2f2;
 	border: none;
 }
-/*состояния инпутов для ввода дат*/
 .reservation-form input[type="text"]:hover {
 	background-color: #ebebeb;
 }
@@ -125,7 +109,6 @@ a {
 	background-color: #ffffff;
 	border:1px #e5e5e5;
 } 
-/*стилизация кнопки*/
 .reservation-button {
 	font-size: 21px;
 	line-height: 26px;
@@ -138,7 +121,6 @@ a {
 	background-color: #81b3d2;
 
 }
-/*состояния для кнопки*/
 .reservation-button:hover {
 	background-color: #669ec0;
 }
@@ -147,7 +129,6 @@ a {
 	background-color: #5496bd;
 }
 
-/*стилизация футера*/
 .main-footer {
 	font-weight: 400; 
 	color: #000000;
@@ -155,19 +136,15 @@ a {
 
 	background-color: rgba(254,254,254,0.9);
 }
-/*для хэштега*/
 .hashtag {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 }
-
-/*стилизация ссылок на соцсети*/
 .footer-social a {
     color: #ffffff;
     background-color: #81b3d2;
 }
-/*состояния соцсетей*/
 .footer-social a:hover {
 	color: #ffffff;
 	background-color: #669ec0;
@@ -179,14 +156,9 @@ a {
 
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
-/*цвет выбранной ссылки ГОСТИНИНЦЫ*/
-.navigation-selected {
+li .navigation-selected { 
 	color: #766357;
 }
-
-/*стилизация группы фильтров*/
-/*стилизация изображения на задний план*/
-
 .search-filters {
 	background-image: url("../img/bg-photo-hotels-1200.jpg");
 	background-color: #6d676b;
@@ -194,28 +166,23 @@ a {
 .filters fieldset {
 	border: none;
 }
-/*шрифт для legend*/
 .filters legend {
 	font-size: 16px;
 	line-height: 21px;
 	color: #ffffff;
 }
-/*стилизация фильтров*/
 .filters ul {
 	line-height: 21px;
 	font-weight: 400;
 	color: #ffffff;
 	list-style: none;
 }
-/*ползунок будет стилизован позже*/
-
-/*стилизация кнопки показать*/
 .filters-button {
 	line-height: 21px;
 	font-weight: 400;
 	color: #ffffff;
 
-	border:1px solid #ffffff;
+	border: 1px solid #ffffff;
 	border-radius: 2px;
 	background-color: rgba(255,255,255, 0);
 }
@@ -225,7 +192,6 @@ a {
 	background-color: rgba(255,255,255, 1);
 }
 
-/*стилизация навигационной цепочки*/
 .sorting {
 	font-size: 21px;
 
@@ -242,18 +208,15 @@ a {
 	line-height: 18px;
 	font-weight: 400;
 }
-/*цвет активного состояния*/
 .breadcrumbs-selected {
 	color: #81b3d2;
 
 	border: none;
 }
-/*цвет неактивных ссылок*/
 .breadcrumbs a {
 	color: #e0e0e0;
 	border-bottom: 1px dotted #81b3d2;
 }
-/*состояния ссылок*/
 .breadcrumbs a:hover {
 	color: #81b3d2;
 }
@@ -262,8 +225,6 @@ a {
 	border: none;
 }
 
-/*стилизация списка отелей*/
-/*что общее*/
 .hotels-list {
 	font-size: 14px;
 	line-height: 21px;
@@ -275,31 +236,27 @@ a {
 	line-height: 26px;
 	color: #000000;
 }
-/*состояния ссылок*/
 .hotel-header a:hover {
 	color: #81b3d2;
 }
 .hotel-header a:active {
 	color: #cacaca;
 }
-/*НУЖНО ЛЛИ ТАК СТИЛИЗОВАТЬ?*/
 .hotel-item {
 	border-bottom: 1px solid #e5e5e5;
 }
-/*стилизация рейтинга отеля*/
 .hotels-rating {
   color: #666666;
   text-align: center;
 
   background-color: #f2f2f2;
 }
-/*стилизация кнопок общая*/
+
 .hotel-btn a {
 	font-size: 14px;
 	line-height: 21px; 
 	color: #ffffff;
 }
-/*кнопка подробнее и ее состояния*/
 .btn-info {
 	background-color: #81b3d2;
 }
@@ -310,7 +267,6 @@ a {
 	color: #82b2cf;
 	background-color: #5496bd;
 }
-/*кнопка заброн. и ее состояния*/
 .btn-reserv {
 	background-color: #766357;
 }
