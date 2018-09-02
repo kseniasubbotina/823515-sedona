@@ -181,6 +181,11 @@ a {
 
 
 
+
+
+
+
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 li .navigation-selected {
@@ -332,12 +337,19 @@ li .navigation-selected {
 
 
 
-/*--------------------------сеточные стили--------------------------------------*/
+
+
+
+
+
+/*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
 body {
   min-width: 1200;
   min-height: 2762;
+
+  box-sizing: border-box;
 }
 
 .main-header {
@@ -370,6 +382,7 @@ body {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .main-image {
@@ -393,51 +406,58 @@ body {
 }
 
 .pre-causes {
-  padding-bottom: 50px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 50px;
 }
 
 .causes-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 53px;
 }
 
 .causes-item {
-  width: 400px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.item-wrapper {
-  width: 280px;
-  padding-top: 45px;
-  padding-bottom: 58px;
-  padding-left: 60px;
+  width: 400px;
 }
 
 .causes-item-picture {
   display: flex;
+  flex-direction: row;
   width: 1200px;
+}
+
+.item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
 }
 
 .causes-item-picture img {
   width: 800px;
-  margin-left: auto;
 }
 
-.causes-2 {
-  order: 1;
-  padding-right: 60px;
-}
 
 .quality-list {
+  margin: 0px;
+  padding: 0px;
+
   display: flex;
 }
 
-.quality-item .item-wrapper {
-  width: 250px;
-  margin: auto;
-  padding-top: 55px;
-  padding-bottom: 85px;
+.quality-item {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reservation {
@@ -449,6 +469,15 @@ body {
 .reservation-paragraph {
   width: 435px;
   margin-bottom: 50px;
+}
+
+.reservation-paragraph p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.reservation-paragraph .as-header {
+  margin-bottom: 30px;
 }
 
 .form-call {
@@ -477,8 +506,7 @@ body {
 }
 
 .reservation-form input[type="text"],
-.reservation-form input[type="number"],
-label {
+.reservation-form input[type="number"] {
   padding: 14px;
 }
 
@@ -498,27 +526,36 @@ label {
 
 .main-footer {
   display: flex;
-	justify-content: center;
-	justify-content: space-around;
-	align-items: center;
-  	width: 1200px;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .hashtag {
   width: 240px;
+  margin:0px;
   margin-right: 88px;
-  margin: 0px;
 }
 
 .social-list {
   width: 400px;
   margin: 0px;
+  padding:0px;
   margin-right: 88px;
 }
 
 .footer-copyright {
   width: 240px;
   margin: 0px;
-  margin-right: 88px;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
