@@ -13,14 +13,16 @@
   <!--главная навигация сайта-->
   <header class="main-header">
     <nav class="site-navigation">
-      <a class="site-navigation-logo" href="index.html" aria-label="Нажмите, для перехода на главную страницу">       
+      <div class="site-navigation-wrapper">
+        <a class="site-navigation-logo" href="index.html" aria-label="Нажмите, для перехода на главную страницу">       
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка Седона">     
-      </a>
+        </a>
+      </div>
       <ul class="site-navigation-list">
-        <li><a href="#" aria-label="Нажмите, что бы узнать подробную информацию о городке">Информация</a></li>
-        <li><a href="#" aria-label="Нажмите, для перехода в галерею">Фото и видео</a></li>
-        <li><a href="#" aria-label="Нажмите, что бы рассмотреть Седону на карте">Карта штата</a></li>
-        <li><a class="navigation-selected" href="#" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
+        <li class="navigation-left"><a href="#" aria-label="Нажмите, что бы узнать подробную информацию о городке">Информация</a></li>
+        <li class="navigation-left"><a href="#" aria-label="Нажмите, для перехода в галерею">Фото и видео</a></li>
+        <li class="navigation-right"><a href="#" aria-label="Нажмите, что бы рассмотреть Седону на карте">Карта штата</a></li>
+        <li class="navigation-right navigation-selected"><a href="hotels.html" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -30,47 +32,51 @@
       <h2 class="visually-hidden">Фильтры гостиниц</h2>
       <form class="filters" method="get" action="htpps://echo.htmlacademy.ru">
         <!--группа фильтров инфраструкутра-->
-        <fieldset>
-          <legend>Инфраструктура</legend>
-          <ul>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="pool" checked> Бассейн
-              </label>
-            </li>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="parking"> Парковка
-              </label>
-            </li>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="Wi-Fi"> Wi-Fi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="filter-infr">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="pool" checked> Бассейн
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="parking"> Парковка
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="Wi-Fi"> Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <!--группа фильтров тип жилья-->
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="hotel" checked> Гостиница
-              </label>
-            </li>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="motel" checked> Мотель
-              </label>
-            </li>
-            <li class="filter-option">
-              <label>
-                <input class="visually-hidden" type="checkbox" name="apartments" checked> Апартаменты
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="type-lodging">
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="hotel" checked> Гостиница
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="motel" checked> Мотель
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input class="visually-hidden" type="checkbox" name="apartments" checked> Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
         <!--ползунок стоимости сверстается позже-->
         <div class="cost-column">
           <fieldset>
@@ -124,7 +130,7 @@
               </a>
             </p>
           </div>
-          <p class="hotels-rating">рейтинг: 8,5</p>
+          <span class="hotels-rating">рейтинг: 8,5</span>
         </li>
         <!--гостиница 2-->
         <li class="hotel-item">
@@ -150,7 +156,7 @@
               </a>
             </p>
           </div>
-          <p class="hotels-rating">рейтинг: 8,9</p>
+          <span class="hotels-rating">рейтинг: 8,9</span>
         </li>
         <!--гостиница 3-->
         <li class="hotel-item">
@@ -176,7 +182,7 @@
               </a>
             </p>
           </div>
-          <p class="hotels-rating">рейтинг: 9,2</p>
+          <span class="hotels-rating">рейтинг: 9,2</span>
         </li>
       </ul>
     </article>

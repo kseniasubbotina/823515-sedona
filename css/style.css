@@ -189,6 +189,12 @@ a {
 
 
 
+
+
+
+
+
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 li .navigation-selected {
@@ -347,43 +353,61 @@ li .navigation-selected {
 
 
 
+
+
+
+
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
 body {
-  min-width: 1200;
-  min-height: 2762;
+  min-width: 1200px;
+  min-height: 2762px;
 
   box-sizing: border-box;
 }
 
 .main-header {
+
+  width: 1200px;
   margin: 0 auto;
   margin-bottom: 0;
 }
 
 .site-navigation {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.site-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 0px;
-
-  background-color: #ffffff;
+  width: 1200px;
 }
 
 .site-navigation-logo {
-  width: : 140px;
+  position: absolute;
+  left: 530px;
+  width: 140px;
   height: 72px;
 }
 
 .site-navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.site-navigation-list li {
+  width: 230px;
+  padding: 15px 73px;
+}
+
+.site-navigation .navigation-left {
+  margin-right: auto;
+}
+
+.site-navigation .navigation-right {
+  margin-left: auto;
+  text-align: right;
 }
 
 .container {
@@ -450,6 +474,26 @@ body {
   width: 800px;
 }
 
+.causes-item h3 {
+  width: 130px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  padding-top: 45px;
+}
+
+.causes-item p {
+  width: 260px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+}
+
+.causes-item span {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
 
 .quality-list {
   margin: 0px;
@@ -498,7 +542,7 @@ body {
 
   background-color: #ffffff;
   /*временно*/
-  box-shadow: inset 0 0 0 2px #000000;
+  border: 1px solid #000000;
 }
 
 .reservation-form {
@@ -572,10 +616,34 @@ body {
 
 .filters {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  justify-content: center;
+
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
 }
+
+
+.filters fieldset {
+  margin: 0px;
+  padding: 0px;
+}
+
+.filter-infr {
+  width: 140px;
+  margin-right: 115px;
+  padding-left: 73px;
+}
+
+.type-lodging {
+  width: 140px;
+}
+
+.cost-column {
+  margin-left: auto;
+  padding-: 73px;
+}
+
 
 .sorting {
   display: flex;
@@ -599,40 +667,49 @@ body {
 }
 
 .hotels {
-	width: 1056px;
-	margin: 0 auto;
-	padding: 0px;
+  width: 1056px;
+  margin: 0 auto;
+  padding: 0px;
 }
+
 .hotels-list {
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0px;
 }
+
 .hotel-item {
-	display: flex;
-	justify-content: space-between;
-	width: 1056px;
-	margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 1056px;
+  margin-bottom: 30px;
 }
+
 .hotel-item:last-child {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
+
 .hotel-img {
-	margin: 0px;
-	padding: 0px;
-	margin-right: 30px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 30px;
 }
+
+.hotels-rating {  
+	width: 110px;
+}
+
 .hotel-about {
-	display: flex;
-	flex-direction: column;
-	width: 258px;
-	margin-right: 520px;
+  display: flex;
+  flex-direction: column;
+  width: 258px;
+  margin-right: 520px;
 }
+
 .hotel-header,
 .hotel-cost,
 .hotel-btn {
-	margin: 0px;
-	padding: 0px;
-
+  margin: 0px;
+  padding: 0px;
 }
