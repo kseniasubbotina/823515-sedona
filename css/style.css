@@ -43,7 +43,7 @@ a {
 
 .main-image {
   width: 1200px;
-  min-height: 510px;
+  min-height: 353px;
 
   background-color: #6d676b;
   background-image: url("../img/bg-photo-index-1200.jpg");
@@ -79,7 +79,7 @@ a {
 
 .reservation {
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -175,6 +175,7 @@ a {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
 
 
 
@@ -361,6 +362,7 @@ li .navigation-selected {
 
 
 
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -444,6 +446,7 @@ body {
 }
 
 .causes-list {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -470,7 +473,11 @@ body {
   flex-direction: column;
   align-items: center;
   width: 400px;
+  padding-top: 45px;
+  padding-bottom: 55px;
 }
+
+
 
 .causes-item-picture img {
   width: 800px;
@@ -481,20 +488,27 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
-  padding-top: 45px;
 }
 
 .causes-item p {
   width: 260px;
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
 }
 
 .causes-item span {
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
+}
+
+.quality-item-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding-top: 205px;
+  padding-bottom: 83px;
 }
 
 .quality-list {
@@ -539,6 +553,7 @@ body {
 }
 
 .reservation-column {
+  box-sizing: border-box;
   width: 568px;
   height: 395px;
 
@@ -549,24 +564,32 @@ body {
 
 .reservation-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 457px;
+  padding: 0;
+  margin: 0;
+  padding: 56px;
 }
 
 .reservation-form input[type="text"] {
   width: 346px;
   padding: 14px;
+  margin-bottom: 30px
 }
 
 .reservation-form input[type="text"],
 .reservation-form input[type="number"] {
-  padding: 14px;
+  padding: 10px;
 }
 
 .reservation-form input[type="number"] {
   width: 114px;
+  margin-bottom: 55px;
 }
 
 .reservation-form button {
+	width: 457px;
   padding-top: 17px;
   padding-bottom: 22px;
 }
@@ -583,6 +606,7 @@ body {
   align-items: center;
 
   margin: 0 auto;
+  padding: 35px 73px;
   width: 1200px;
 }
 
@@ -617,12 +641,16 @@ body {
 }
 
 .filters {
+	box-sizing: border-box;
   display: flex;
 
   width: 1200px;
   margin: 0;
   padding: 0;
   padding-top: 25px;
+  padding-bottom: 35px;
+  padding-right: 73px;
+  padding-left: 73px;
 }
 
 
@@ -634,7 +662,6 @@ body {
 .filter-infr {
   width: 140px;
   margin-right: 115px;
-  padding-left: 73px;
 }
 
 .type-lodging {
@@ -644,9 +671,7 @@ body {
 .filter-range {
   width: 330px;
   margin-left: auto;
-  padding-right: 73px;
-  margin-bottom: 35px;
-  color: #ffffff;
+   color: #ffffff;
 }
 
 .filter-range-title {
@@ -767,6 +792,7 @@ body {
 }
 
 
+
 /*.cost-column {
   margin-left: auto;
   padding-right: 73px;
@@ -775,9 +801,9 @@ body {
 .sorting {
   display: flex;
   justify-content: flex-start;
-  width: 1056px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0 73px;
   margin-bottom: 30px;
 }
 
@@ -794,9 +820,8 @@ body {
 }
 
 .hotels {
-  width: 1056px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0px;
 }
 
 .hotels-list {
@@ -809,7 +834,8 @@ body {
 .hotel-item {
   display: flex;
   justify-content: space-between;
-  width: 1056px;
+
+    padding: 32px 73px;
   margin-bottom: 30px;
 }
 
