@@ -50,10 +50,26 @@ img {
   width: 1200px;
   min-height: 353px;
 
+  position:relative;
+
   background-color: #6d676b;
   background-image: url("../img/bg-photo-index-1200.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.main-image::after {
+  content: "";
+
+  position: absolute;
+  top: 455px;
+  left: 0;
+  width: 1200px;
+  height: 59px;
+
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .causes {
@@ -180,6 +196,11 @@ img {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
+
+
+
+
 
 
 
@@ -380,6 +401,11 @@ li .navigation-selected {
 
 
 
+
+
+
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -443,8 +469,7 @@ body {
 
 .main-image {
   text-align: center;
-  padding-top: 78px;
-  padding-bottom: 90px;
+  padding: 76px 0;
   margin-bottom: 60px;
 }
 
@@ -525,11 +550,12 @@ body {
 }
 
 .quality-item-wrap {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
-  padding-top: 205px;
+  padding-top: 160px;
   padding-bottom: 83px;
 }
 
@@ -541,11 +567,54 @@ body {
 }
 
 .quality-item {
+  position: relative;
   margin: 0px;
   padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.quality-item:first-child::after {
+  content: "";
+
+  position: absolute;
+  top: 60px;
+  left: 162px;
+  width: 75px;
+  height: 72px;
+
+  background-image: url("../img/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.quality-item:nth-child(2)::after {
+  content: "";
+
+  position: absolute;
+  top: 61px;
+  left: 163px;
+  width: 74px;
+  height: 70px;
+
+  background-image: url("../img/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.quality-item:last-child::after {
+  content: "";
+
+  position: absolute;
+  top: 57px;
+  left: 170px;
+  width: 64px;
+  height: 76px;
+
+  background-image: url("../img/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .reservation {
@@ -624,8 +693,6 @@ body {
 .main-footer {
   margin: 0 auto;
   width: 1200px;
-
-  background-color: rgba(0, 255, 0, 0.2);
 }
 
 .main-footer .footer-container {
@@ -679,17 +746,29 @@ body {
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
+
+
+
+
+
 
 /*нужно будет изменить*/
+
 .footer-copitight-icon:hover::after {
-	color: #98c1da;
+  color: #98c1da;
 }
+
 .footer-copitight-icon:focus::after,
 .footer-copitight-icon:active::after {
-	opacity: 0.2;
+  opacity: 0.2;
 }
+
+
+
+
+
+
 /***/
 
 .visually-hidden:not(:focus):not(:active),
@@ -864,6 +943,11 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
   cursor: pointer;
 }
+
+
+
+
+
 
 
 
