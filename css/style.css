@@ -217,6 +217,13 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
+
+
+
+
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 li .navigation-selected {
@@ -409,12 +416,18 @@ li .navigation-selected {
 
 
 
+
+
+
+
+
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
 body {
   min-width: 1200px;
-  min-height: 2762px;
 
   box-sizing: border-box;
 }
@@ -434,6 +447,7 @@ body {
 
 .site-navigation-logo {
   position: absolute;
+  z-index: 1;
   left: 530px;
   width: 140px;
   height: 72px;
@@ -472,7 +486,7 @@ body {
 
 .main-image {
   text-align: center;
-  padding: 76px 0;
+  padding: 75px 0;
   margin-bottom: 60px;
 }
 
@@ -621,9 +635,11 @@ body {
 }
 
 .reservation {
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  		position: relative;
 }
 
 .reservation-paragraph {
@@ -641,6 +657,7 @@ body {
 }
 
 .form-call {
+
   width: 568px;
   padding: 35px 0px;
   margin: 0;
@@ -648,62 +665,140 @@ body {
 
 .reservation-column {
   box-sizing: border-box;
+  position: absolute;
+  top: 256px;
   width: 568px;
   height: 395px;
-
+  padding: 55px;
   background-color: #ffffff;
   /*временно*/
-  border: 1px solid #000000;
+
 }
 
 .reservation-form {
-
-  position: relative;
-  width: 458px;
-  height: 285px;
-
-  margin: 55px;
-
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-}
-
-.form-item {
-  padding: 0;
-  margin: 0;
-}
-
-
-
-/*.reservation-form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 457px;
-  padding: 0;
+
+  box-sizing: border-box;
+
+  width: 458px;
+}
+
+.form-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+
+  list-style: none;
+}
+
+.input-text {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input-text input {
+  position: relative;
+  width: 309px;
   margin: 0;
-  padding: 56px;
-}
-*/
-
-.form-item input[type="text"] {
-  width: 346px;
-  padding: 7px;
-  margin-bottom: 30px
-}
-
-.form-item input[type="number"] {
   padding: 10px;
-  width: 114px;
+}
+
+.input-text .btn-calendar {
+  width: 37px;
+  height: 37px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 0;
+}
+
+.btn-calendar path {
+  fill: #cacaca;
+}
+
+.btn-calendar path:hover {
+  fill: #000000;
+}
+
+.btn-calendar path:active {
+  fill: #81b3d2;
+}
+
+.input-number {
+  display: flex;
+  width: 226px;
   margin-bottom: 55px;
 }
 
-.form-item button {
-  width: 457px;
-  padding-top: 17px;
-  padding-bottom: 22px;
+.input-number input {
+  margin: 0;
+  padding: 7px;
+  width: 40px;
 }
 
+.input-text label,
+.input-number label {
+  display: inline-block;
+  width: 112px;
+  text-align: left;
+}
+
+.reservation-button {
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
+
+.input-number button {
+  min-width: 37px;
+  height: 37px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 0;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn:before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 3px;
+  top: 18px;
+  left: 11px;
+  background: #a9a9a9;
+}
+
+.btn:after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 3px;
+  top: 18px;
+  left: 11px;
+  background: #a9a9a9;
+  transform: rotate(-90deg)
+}
+
+.btn-minus:after {
+  content: none;
+}
+
+.btn:hover:after,
+.btn:hover:before {
+  background-color: #000000;
+}
+
+.btn:active:after,
+.btn:active:before {
+  background-color: #81b3d2;
+}
 
 .img-map {
   width: 1200px;
@@ -957,19 +1052,6 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
