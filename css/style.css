@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-navigation-list,
 .causes-list,
 .social-list,
@@ -175,6 +180,12 @@ a {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
+
+
+
+
+
 
 
 
@@ -363,6 +374,12 @@ li .navigation-selected {
 
 
 
+
+
+
+
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -395,6 +412,7 @@ body {
 
 .site-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -402,6 +420,10 @@ body {
 
 .site-navigation-list li {
   width: 230px;
+}
+
+.site-navigation-list a {
+  display: block;
   padding: 15px 73px;
 }
 
@@ -589,7 +611,7 @@ body {
 }
 
 .reservation-form button {
-	width: 457px;
+  width: 457px;
   padding-top: 17px;
   padding-bottom: 22px;
 }
@@ -600,40 +622,92 @@ body {
 }
 
 .main-footer {
+  margin: 0 auto;
+  width: 1200px;
+
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+.main-footer .footer-container {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  justify-content: space-around;
   align-items: center;
 
-  margin: 0 auto;
-  padding: 35px 73px;
-  width: 1200px;
+  padding-top: 35px;
+  padding-left: 130px;
+  padding-right: 100px;
+  padding-bottom: 35px;
 }
 
 .hashtag {
-  width: 240px;
+  width: 140px;
   margin: 0px;
-  margin-right: 88px;
+  margin-right: 255px;
+}
+
+.footer-social {
+  width: 150px;
 }
 
 .social-list {
-  width: 400px;
   margin: 0px;
   padding: 0px;
-  margin-right: 88px;
 }
 
 .footer-copyright {
-  width: 240px;
+  display: flex;
+  width: 200px;
   margin: 0px;
+  margin-left: auto;
 }
 
-.visually-hidden {
+.footer-copyright .footer-copitight-icon {
+  position: relative;
+}
+
+.footer-copitight-icon::after {
+  content: "";
+
   position: absolute;
-  clip: rect(0 0 0 0);
+  top: -5px;
+  left: 5px;
+
+  width: 115px;
+  height: 40px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+}
+
+/*нужно будет изменить*/
+.footer-copitight-icon:hover::after {
+	color: #98c1da;
+}
+.footer-copitight-icon:focus::after,
+.footer-copitight-icon:active::after {
+	opacity: 0.2;
+}
+/***/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .search-filters {
@@ -641,7 +715,7 @@ body {
 }
 
 .filters {
-	box-sizing: border-box;
+  box-sizing: border-box;
   display: flex;
 
   width: 1200px;
@@ -671,7 +745,7 @@ body {
 .filter-range {
   width: 330px;
   margin-left: auto;
-   color: #ffffff;
+  color: #ffffff;
 }
 
 .filter-range-title {
@@ -793,6 +867,12 @@ body {
 
 
 
+
+
+
+
+
+
 /*.cost-column {
   margin-left: auto;
   padding-right: 73px;
@@ -835,7 +915,7 @@ body {
   display: flex;
   justify-content: space-between;
 
-    padding: 32px 73px;
+  padding: 32px 73px;
   margin-bottom: 30px;
 }
 
