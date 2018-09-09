@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -118,7 +118,7 @@ input[type="radio"].visually-hidden {
 
 .reservation {
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -136,6 +136,7 @@ input[type="radio"].visually-hidden {
 
 .form-call {
   font-size: 21px;
+  font-weight: 700;
   color: #ffffff;
 
   background-color: #766357;
@@ -214,6 +215,12 @@ input[type="radio"].visually-hidden {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
+
+
+
+
+
 
 
 
@@ -425,6 +432,12 @@ li .navigation-selected {
 
 
 
+
+
+
+
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -435,51 +448,59 @@ body {
 }
 
 .main-header {
-
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   margin-bottom: 0;
 }
 
 .site-navigation {
-  position: relative;
   display: flex;
-  width: 1200px;
+  box-sizing: border-box;
 }
 
 .site-navigation-logo {
   position: absolute;
   z-index: 1;
+  margin: 0;
+  padding: 0;
+  top: 0px;
   left: 530px;
   width: 140px;
   height: 72px;
 }
 
 .site-navigation-list {
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 100%;
+  margin: 0 auto;
+  padding: 15px 71px;
 }
 
 .site-navigation-list li {
-  width: 230px;
+  width: 240px;
+
+  margin: 0;
+  padding: 0;
 }
 
-.site-navigation-list a {
-  display: block;
-  padding: 15px 73px;
-}
+.site-navigation-list .navigation-left {
 
-.site-navigation .navigation-left {
   margin-right: auto;
+  text-align: left;
 }
 
-.site-navigation .navigation-right {
+.site-navigation-list .navigation-right {
+
   margin-left: auto;
   text-align: right;
 }
+
+
+
 
 .container {
   width: 1200px;
@@ -497,7 +518,7 @@ body {
 .container h1 {
   width: 440px;
   margin: auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .causes {
@@ -547,19 +568,27 @@ body {
 
 
 
-.causes-item-picture img {
-  width: 800px;
-}
+
 
 .causes-item h3 {
-  width: 130px;
+  width: 151px;
   margin: 0;
   padding: 0;
   margin-bottom: 25px;
 }
 
 .causes-item p {
-  width: 260px;
+  width: 284px;
+  margin: 0;
+  padding: 0;
+}
+
+.causes-item-picture img {
+  width: 800px;
+}
+
+.causes-item-picture p {
+  width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -577,7 +606,7 @@ body {
   align-items: center;
   width: 400px;
   padding-top: 160px;
-  padding-bottom: 83px;
+  padding-bottom: 82px;
 }
 
 .quality-list {
@@ -670,10 +699,10 @@ body {
 .reservation-column {
   box-sizing: border-box;
   position: absolute;
-  top: 237px;
+  top: 239px;
   width: 568px;
   height: 395px;
-  padding: 55px;
+  padding: 58px 55px;
   background-color: #ffffff;
   /*временно*/
 }
@@ -688,10 +717,16 @@ body {
   width: 458px;
 }
 
+.input-number-column {
+  display: flex;
+  width: 100%;
+}
+
 .form-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+
   padding: 0px;
   margin: 0px;
 
@@ -700,16 +735,18 @@ body {
 
 .input-text {
   display: flex;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
+  margin: 0;
   margin-bottom: 30px;
 }
 
 .input-text input {
   position: relative;
-  width: 309px;
+  width: 286px;
   margin: 0;
-  padding: 10px;
+  padding: 11px;
 }
 
 .input-text .btn-calendar {
@@ -734,28 +771,41 @@ body {
 
 .input-number {
   display: flex;
-  width: 226px;
-  margin-bottom: 55px;
+  align-items: center;
+  width: 228px;
+  margin: 0px;
+  margin-bottom: 57px;
+}
+
+.input-number-column {
+  width: 100%;
 }
 
 .input-number input {
   margin: 0;
-  padding: 7px;
-  width: 40px;
+  padding: 11px;
+  width: 20px;
 }
 
 .input-text label,
 .input-number label {
 
   display: inline-block;
-  width: 112px;
+  min-width: 112px;
 
   text-align: left;
-  vertical-align: center;
+}
+
+.number-children {
+  justify-content: flex-end;
+}
+
+.number-children label {
+  min-width: 60px;
 }
 
 .reservation-button {
-  padding-top: 12px;
+  padding-top: 14px;
   padding-bottom: 17px;
 }
 
@@ -809,14 +859,14 @@ body {
 .img-map {
   width: 1200px;
   margin-bottom: 0px;
+  height: 593px;
+  background: url("../img/map.jpg");
 }
 
 .main-footer {
   margin: 0 auto;
   width: 1200px;
-  margin-top: -120px;
-
-
+  margin-top: -117px;
 }
 
 .main-footer .footer-container {
@@ -829,10 +879,6 @@ body {
   padding-left: 130px;
   padding-right: 100px;
   padding-bottom: 35px;
-
-}
-.footer-container {
-	background-color: rgba(254,254,254,0.9);
 }
 
 .hashtag {
@@ -1065,6 +1111,12 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
+
+
+
+
+
 
 
 
