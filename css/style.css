@@ -71,7 +71,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   background-color: #6d676b;
-  background-image: url("../img/bg-photo-index-1200.jpg");
+  background-image: url("../img/bg-photo-index-1200-crop.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 455px;
+  top: 452px;
   left: 0;
   width: 1200px;
   height: 59px;
@@ -214,6 +214,7 @@ input[type="radio"].visually-hidden {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
 
 
 
@@ -423,6 +424,7 @@ li .navigation-selected {
 
 
 
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -485,15 +487,17 @@ body {
 }
 
 .main-image {
-  text-align: center;
-  padding: 75px 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 76px;
+  padding-bottom: 80px;
   margin-bottom: 60px;
 }
 
 .container h1 {
   width: 440px;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .causes {
@@ -515,7 +519,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 53px;
+  margin-bottom: 55px;
 }
 
 .causes-item {
@@ -563,7 +567,7 @@ body {
 .causes-item span {
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .quality-item-wrap {
@@ -624,8 +628,8 @@ body {
   content: "";
 
   position: absolute;
-  top: 57px;
-  left: 170px;
+  top: 56px;
+  left: 172x;
   width: 64px;
   height: 76px;
 
@@ -639,12 +643,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  		position: relative;
+  position: relative;
 }
 
 .reservation-paragraph {
   width: 435px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .reservation-paragraph p {
@@ -653,26 +657,25 @@ body {
 }
 
 .reservation-paragraph .as-header {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .form-call {
 
   width: 568px;
-  padding: 35px 0px;
+  padding: 30px 0px;
   margin: 0;
 }
 
 .reservation-column {
   box-sizing: border-box;
   position: absolute;
-  top: 256px;
+  top: 242px;
   width: 568px;
   height: 395px;
   padding: 55px;
   background-color: #ffffff;
   /*временно*/
-
 }
 
 .reservation-form {
@@ -743,9 +746,12 @@ body {
 
 .input-text label,
 .input-number label {
+
   display: inline-block;
   width: 112px;
+
   text-align: left;
+  vertical-align: center;
 }
 
 .reservation-button {
@@ -808,6 +814,9 @@ body {
 .main-footer {
   margin: 0 auto;
   width: 1200px;
+  margin-top: -120px;
+
+
 }
 
 .main-footer .footer-container {
@@ -820,6 +829,10 @@ body {
   padding-left: 130px;
   padding-right: 100px;
   padding-bottom: 35px;
+
+}
+.footer-container {
+	background-color: rgba(254,254,254,0.9);
 }
 
 .hashtag {
@@ -1052,6 +1065,7 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
 
 
 
