@@ -173,6 +173,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 
   border: none;
   background-color: #81b3d2;
@@ -215,6 +216,8 @@ input[type="radio"].visually-hidden {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
+
 
 
 
@@ -383,6 +386,8 @@ li .navigation-selected {
   display: inline-block;
   padding: 110px;
 }
+
+
 
 
 
@@ -692,17 +697,17 @@ body {
 .form-call {
 
   width: 568px;
-  padding: 30px 0px;
+  padding: 32px 0px;
   margin: 0;
 }
 
 .reservation-column {
   box-sizing: border-box;
   position: absolute;
-  top: 239px;
+  top: 242px;
   width: 568px;
   height: 395px;
-  padding: 58px 55px;
+  padding: 55px;
   background-color: #ffffff;
   /*временно*/
 }
@@ -744,12 +749,16 @@ body {
 
 .input-text input {
   position: relative;
-  width: 286px;
+  box-sizing: border-box;
+  width: 309px;
   margin: 0;
+  height: 37px;
   padding: 11px;
 }
 
 .input-text .btn-calendar {
+  position: absolute;
+  left: 475px;
   width: 37px;
   height: 37px;
   background: #f2f2f2;
@@ -782,9 +791,11 @@ body {
 }
 
 .input-number input {
+  box-sizing: border-box;
   margin: 0;
-  padding: 11px;
-  width: 20px;
+  padding: 7px;
+  width: 42px;
+  height: 37px;
 }
 
 .input-text label,
@@ -1111,6 +1122,8 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
+
 
 
 
