@@ -235,6 +235,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 li .navigation-selected {
@@ -254,6 +255,8 @@ li .navigation-selected {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+
+  margin-bottom: 25px;
 }
 
 .filters ul {
@@ -261,6 +264,9 @@ li .navigation-selected {
   font-weight: 400;
   color: #ffffff;
   list-style: none;
+
+  padding: 0;
+  margin: 0;
 }
 
 .filters-button {
@@ -443,6 +449,7 @@ li .navigation-selected {
 
 
 
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -488,20 +495,25 @@ body {
 .site-navigation-list li {
   width: 23%;
 }
-.site-navigation-list  .navigation-left-info {
-	margin: 0;
+
+.site-navigation-list .navigation-left-info {
+  margin: 0;
 }
-.site-navigation-list  .navigation-left-photo {
-	margin-right: auto;
+
+.site-navigation-list .navigation-left-photo {
+  margin-right: auto;
 }
+
 .site-navigation-list .navigation-right-map {
-	margin-left: auto;
-	text-align: right;
+  margin-left: auto;
+  text-align: right;
 }
+
 .site-navigation-list .navigation-right-hotels {
-	text-align: right;
-	margin: 0;
+  text-align: right;
+  margin: 0;
 }
+
 
 /*.site-navigation-list .navigation-left {
 
@@ -515,8 +527,6 @@ body {
   text-align: right;
 }
 */
-
-
 
 .container {
   width: 1200px;
@@ -886,11 +896,16 @@ body {
   background: url("../img/map.jpg");
 }
 
-.main-footer {
+.main-footer-index {
   margin: 0 auto;
   width: 1200px;
   margin-top: -119px;
 }
+.main-footer {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 
 .main-footer .footer-container {
   box-sizing: border-box;
@@ -1001,6 +1016,47 @@ body {
 .filters fieldset {
   margin: 0px;
   padding: 0px;
+}
+
+.filter-option {
+		position: relative;
+	margin-bottom: 25px;
+	padding-left: 40px;
+}
+.filter-option label {
+	position: relative;
+
+	display: block;
+	cursor: pointer;
+	user-select: none;
+}
+.filter-input-checkbox + label::before {
+	content: "";
+	position: absolute;
+	left: -40px;
+	top: 0;
+
+
+	width: 23px;
+	height: 23px;
+
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.filter-input-checkbox:checked + label::before {
+	content: "";
+	position: absolute;
+	left: -40px;
+	top: 0;
+
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .filter-infr {
@@ -1135,31 +1191,10 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.cost-column {
-  margin-left: auto;
-  padding-right: 73px;
-}*/
-
 .sorting {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
   padding: 0 73px;
@@ -1172,10 +1207,22 @@ body {
   padding: 0px;
 }
 
+.sorting-paragraph {
+  margin-right: 50px;
+}
+
+.sorting h2 {
+  margin-right: 40px;
+}
+
 .breadcrumbs {
   display: flex;
   margin: 0px;
   padding: 0px;
+}
+
+.breadcrumbs li {
+  margin-right: 35px;
 }
 
 .hotels {

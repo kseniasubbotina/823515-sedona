@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,10 +19,10 @@
         </a>
       </div>
       <ul class="site-navigation-list">
-        <li class="navigation-left"><a href="#" aria-label="Нажмите, что бы узнать подробную информацию о городке">Информация</a></li>
-        <li class="navigation-left"><a href="#" aria-label="Нажмите, для перехода в галерею">Фото и видео</a></li>
-        <li class="navigation-right"><a href="#" aria-label="Нажмите, что бы рассмотреть Седону на карте">Карта штата</a></li>
-        <li class="navigation-right navigation-selected"><a href="hotels.html" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
+        <li class="navigation-left-info"><a href="#" aria-label="Нажмите, что бы узнать подробную информацию о городке">Информация</a></li>
+        <li class="navigation-left-photo"><a href="#" aria-label="Нажмите, для перехода в галерею">Фото и видео</a></li>
+        <li class="navigation-right-map"><a href="#" aria-label="Нажмите, что бы рассмотреть Седону на карте">Карта штата</a></li>
+        <li class="navigation-right-hotels navigation-selected"><a href="hotels.html" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -38,19 +37,16 @@
             <legend>Инфраструктура</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="pool" checked> Бассейн
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="parking"> Парковка
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="parking" id="parking">
+                <label for="parking"> Парковка </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="Wi-Fi"> Wi-Fi
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                <label for="Wi-Fi">Wi-Fi</label>
               </li>
             </ul>
           </fieldset>
@@ -61,19 +57,16 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="hotel" checked> Гостиница
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" checked>
+                <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="motel" checked> Мотель
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" checked>
+                <label for="motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="apartments" checked> Апартаменты
-                </label>
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartments" checked>
+                <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -237,4 +230,5 @@
       </div>
   </footer>
 </body>
+
 </html>
