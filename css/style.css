@@ -188,7 +188,7 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
-.main-footer {
+.main-footer-hotels .main-footer-index {
   font-weight: 400;
   color: #000000;
   text-align: center;
@@ -236,6 +236,9 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 li .navigation-selected {
@@ -255,7 +258,9 @@ li .navigation-selected {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-
+ 
+  margin: 0;
+  padding: 0;
   margin-bottom: 25px;
 }
 
@@ -347,6 +352,7 @@ li .navigation-selected {
   border-bottom: 1px solid #e5e5e5;
 }
 
+
 .hotels-rating {
   color: #666666;
   text-align: center;
@@ -392,6 +398,9 @@ li .navigation-selected {
   display: inline-block;
   padding: 110px;
 }
+
+
+
 
 
 
@@ -513,6 +522,9 @@ body {
   text-align: right;
   margin: 0;
 }
+
+
+
 
 
 /*.site-navigation-list .navigation-left {
@@ -901,13 +913,14 @@ body {
   width: 1200px;
   margin-top: -119px;
 }
-.main-footer {
+
+.main-footer-hotels {
   margin: 0 auto;
   width: 1200px;
 }
 
 
-.main-footer .footer-container {
+.footer-container {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -1006,7 +1019,7 @@ body {
   width: 1200px;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 35px;
   padding-right: 73px;
   padding-left: 73px;
@@ -1019,44 +1032,47 @@ body {
 }
 
 .filter-option {
-		position: relative;
-	margin-bottom: 25px;
-	padding-left: 40px;
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 40px;
 }
+
 .filter-option label {
-	position: relative;
+  position: relative;
 
-	display: block;
-	cursor: pointer;
-	user-select: none;
+  display: block;
+  cursor: pointer;
+  user-select: none;
 }
-.filter-input-checkbox + label::before {
-	content: "";
-	position: absolute;
-	left: -40px;
-	top: 0;
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
 
 
-	width: 23px;
-	height: 23px;
+  width: 23px;
+  height: 23px;
 
-	background-image: url(../img/checkbox-off.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-.filter-input-checkbox:checked + label::before {
-	content: "";
-	position: absolute;
-	left: -40px;
-	top: 0;
+
+.filter-input-checkbox:checked+label::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
 
 
-	width: 27px;
-	height: 23px;
+  width: 27px;
+  height: 23px;
 
-	background-image: url(../img/checkbox-on.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-infr {
@@ -1195,6 +1211,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0 73px;
@@ -1217,12 +1234,51 @@ body {
 
 .breadcrumbs {
   display: flex;
+
   margin: 0px;
   padding: 0px;
 }
 
 .breadcrumbs li {
   margin-right: 35px;
+}
+
+.icon-dir {
+  display: flex;
+  list-style: none;
+}
+
+.icon-up-dir {
+  width: 11px;
+  height: 10px;
+
+  position: absolute;
+  top: 0px;
+  left: 1100px;
+}
+
+.icon-up-dir path:hover {
+  fill: #231f20;
+}
+
+.icon-up-dir path:active {
+  fill: #81b3d2;
+}
+
+.icon-down-dir {
+  width: 11px;
+  height: 10px;
+  position: absolute;
+  top: 0px;
+  left: 1110px;
+}
+
+.icon-down-dir path:hover {
+  fill: #231f20;
+}
+
+.icon-down-dir path:active {
+  fill: #81b3d2;
 }
 
 .hotels {
@@ -1240,7 +1296,7 @@ body {
 
 .hotel-item {
   display: flex;
-
+  position: relative;
   box-sizing: border-box;
   width: 1200px;
   padding: 32px 73px;
@@ -1289,4 +1345,19 @@ body {
   margin-top: auto;
   margin-left: auto;
   padding: 3px 16px;
+}
+
+.star li {
+	margin-right: 5px;
+}
+.star {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 18px;
+  height: 17px;
+
+  position: absolute;
+  right: 73px;
+
+  list-style: none;
 }
