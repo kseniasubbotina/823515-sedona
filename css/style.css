@@ -241,7 +241,7 @@ input[type="radio"].visually-hidden {
 
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
-li .navigation-selected {
+.navigation-selected {
   color: #766357;
 }
 
@@ -261,7 +261,7 @@ li .navigation-selected {
  
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .filters ul {
@@ -1009,7 +1009,7 @@ body {
 }
 
 .search-filters {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .filters {
@@ -1020,7 +1020,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 35px;
+  padding-bottom: 7px;
   padding-right: 73px;
   padding-left: 73px;
 }
@@ -1048,7 +1048,7 @@ body {
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -41px;
   top: 0;
 
 
@@ -1063,7 +1063,7 @@ body {
 .filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  left: -40px;
+  left: -41px;
   top: 0;
 
 
@@ -1085,13 +1085,13 @@ body {
 }
 
 .filter-range {
-  width: 330px;
+  width: 316px;
   margin-left: auto;
   color: #ffffff;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 16px;
@@ -1100,7 +1100,7 @@ body {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   font-size: 0;
 
@@ -1112,7 +1112,7 @@ body {
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 30px;
   vertical-align: top;
 
   cursor: pointer;
@@ -1132,8 +1132,8 @@ body {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  width: 88px;
+  padding-left: 63px;
 }
 
 .price-controls input {
@@ -1208,14 +1208,17 @@ body {
 }
 
 .sorting {
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0 73px;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
+
 }
 
 .sorting-paragraph,
@@ -1225,7 +1228,7 @@ body {
 }
 
 .sorting-paragraph {
-  margin-right: 50px;
+  margin-right: 47px;
 }
 
 .sorting h2 {
@@ -1240,7 +1243,7 @@ body {
 }
 
 .breadcrumbs li {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .icon-dir {
@@ -1253,8 +1256,8 @@ body {
   height: 10px;
 
   position: absolute;
-  top: 0px;
-  left: 1100px;
+  top: 8px;
+  left: 1093px;
 }
 
 .icon-up-dir path:hover {
@@ -1269,8 +1272,8 @@ body {
   width: 11px;
   height: 10px;
   position: absolute;
-  top: 0px;
-  left: 1110px;
+  top: 7px;
+  left: 1116px;
 }
 
 .icon-down-dir path:hover {
@@ -1306,6 +1309,7 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  margin-bottom: auto;
 }
 
 .hotel-header,
