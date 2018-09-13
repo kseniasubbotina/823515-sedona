@@ -188,7 +188,15 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
-.main-footer-hotels .main-footer-index {
+.main-footer-hotels {
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+
+  background-color: rgba(254, 254, 254, 0.9);
+}
+
+.main-footer-index {
   font-weight: 400;
   color: #000000;
   text-align: center;
@@ -239,9 +247,11 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
-.navigation-selected {
+.navigation-selected a {
   color: #766357;
 }
 
@@ -258,7 +268,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
- 
+
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -459,6 +469,8 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
@@ -522,6 +534,8 @@ body {
   text-align: right;
   margin: 0;
 }
+
+
 
 
 
@@ -697,6 +711,7 @@ body {
   position: absolute;
   top: 56px;
   left: 172x;
+  right: 170px;
   width: 64px;
   height: 76px;
 
@@ -738,11 +753,14 @@ body {
   box-sizing: border-box;
   position: absolute;
   top: 241px;
+  left: 0px;
+  right: 0px;
   width: 568px;
   height: 395px;
   padding: 55px;
+
+  margin: 0px auto;
   background-color: #ffffff;
-  /*временно*/
 }
 
 .reservation-form {
@@ -788,15 +806,22 @@ body {
   height: 37px;
   padding: 11px;
 }
-
-.input-text .btn-calendar {
-  position: absolute;
-  left: 475px;
-  width: 37px;
-  height: 37px;
+.btn-calendar {
   background: #f2f2f2;
   border: none;
   border-radius: 0;
+   width: 37px;
+  height: 37px;
+}
+.input-text .btn-calendar-arrival: {
+  position: absolute;
+  left: 475px;
+  top: 55px;
+}
+.input-text .btn-calendar-departure: {
+  position: absolute;
+  left: 475px;
+  top: 122px;
 }
 
 .btn-calendar path {
@@ -924,6 +949,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   padding-top: 35px;
@@ -1218,7 +1244,6 @@ body {
   margin: 0 auto;
   padding: 0 73px;
   margin-bottom: 22px;
-
 }
 
 .sorting-paragraph,
@@ -1302,7 +1327,9 @@ body {
   position: relative;
   box-sizing: border-box;
   width: 1200px;
-  padding: 32px 73px;
+  padding: 0 73px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .hotel-about {
@@ -1325,6 +1352,7 @@ body {
   width: 134px;
   height: 90px;
   margin-right: 30px;
+  padding-top: 5px;
 }
 
 .hotel-header {
@@ -1332,11 +1360,13 @@ body {
 }
 
 .hotel-cost {
-  margin-bottom: 15px;
+  display: flex;
+  margin-bottom: 13px;
 }
 
 .hotel-cost span {
-  margin-right: 40px;
+  width: 95px;
+  margin-right: 20px;
 }
 
 .hotel-btn a {
@@ -1348,12 +1378,13 @@ body {
   padding: 0px;
   margin-top: auto;
   margin-left: auto;
-  padding: 3px 16px;
+  padding: 3px 13px;
 }
 
 .star li {
-	margin-right: 5px;
+  margin-left: 6px;
 }
+
 .star {
   display: flex;
   flex-direction: row-reverse;
@@ -1361,7 +1392,8 @@ body {
   height: 17px;
 
   position: absolute;
-  right: 73px;
+  right: 72px;
+  top: 29px;
 
   list-style: none;
 }
