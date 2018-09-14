@@ -165,7 +165,18 @@ input[type="radio"].visually-hidden {
 
 .reservation-form input[type="text"]:focus {
   background-color: #ffffff;
-  border: 1px #e5e5e5;
+  border: none;
+  outline: 1px #ebebeb solid;
+}
+
+.reservation-form input[type="text"]::placeholder {
+  font: inherit;
+  color: #000000;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+
+  text-transform: uppercase;
 }
 
 .reservation-button {
@@ -226,6 +237,7 @@ input[type="radio"].visually-hidden {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
 
 
 
@@ -392,6 +404,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 110px;
 }
+
 
 
 
@@ -582,6 +595,10 @@ body {
   padding: 0;
 }
 
+.item-3-5 p {
+  width: 261px;
+}
+
 .causes-item-picture img {
   width: 800px;
 }
@@ -728,7 +745,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  top: 241px;
+  top: 100%;
   left: 0px;
   right: 0px;
   width: 568px;
@@ -790,6 +807,7 @@ body {
   width: 100%;
   margin: 0;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .input-text input {
@@ -857,6 +875,7 @@ body {
   padding: 7px;
   width: 42px;
   height: 37px;
+  text-align: center;
 }
 
 .input-text label,
@@ -1208,6 +1227,9 @@ body {
   margin: 0;
 
   color: inherit;
+  font-size: 16px;
+  line-height: 21px;
+  min-height: 30px;
   font: inherit;
 
   background: none;
@@ -1468,7 +1490,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px;
-  width: 110px;
+  min-width: 110px;
 
   padding: 3px 13px;
 }
