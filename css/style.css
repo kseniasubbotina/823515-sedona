@@ -1,19 +1,22 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
+}
+.shadow {
+  box-shadow: 0 0 30px 10px #dbdbdb;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 img {
@@ -33,24 +36,23 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.site-navigation-list  {
+  background-color: #ffffff;
+}
 .site-navigation-list a {
   color: #000000;
+  background-color: #ffffff;
 }
 
 .site-navigation-list a:hover {
@@ -60,7 +62,9 @@ input[type="radio"].visually-hidden {
 .site-navigation-list a:active {
   color: #b2b2b2;
 }
-
+.container {
+  background-color: #ffffff;
+}
 .container h1 {
   font-size: 21px;
   text-align: center;
@@ -69,9 +73,7 @@ input[type="radio"].visually-hidden {
 .main-image {
   width: 1200px;
   min-height: 353px;
-
   position: relative;
-
   background-color: #6d676b;
   background-image: url("../img/bg-photo-index-1200-crop.jpg");
   background-position: top center;
@@ -80,13 +82,11 @@ input[type="radio"].visually-hidden {
 
 .main-image::after {
   content: "";
-
   position: absolute;
   top: 451px;
   left: 0;
   width: 1200px;
   height: 59px;
-
   background-image: url("../img/intro-mask.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -99,7 +99,6 @@ input[type="radio"].visually-hidden {
 
 .causes-item {
   line-height: 21px;
-
   background-color: #eeeeee;
 }
 
@@ -110,7 +109,6 @@ input[type="radio"].visually-hidden {
 
 .causes-item-picture {
   color: #ffffff;
-
   background-color: #81b3d2;
 }
 
@@ -140,8 +138,8 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
-
   background-color: #766357;
+  cursor: pointer;
 }
 
 .form-call:hover {
@@ -175,7 +173,6 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-
   text-transform: uppercase;
 }
 
@@ -187,7 +184,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-
   border: none;
   background-color: #81b3d2;
 }
@@ -205,7 +201,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-align: center;
-
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -213,7 +208,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-align: center;
-
   background-color: rgba(254, 254, 254, 0.9);
 }
 
@@ -241,9 +235,6 @@ input[type="radio"].visually-hidden {
 
 
 
-
-
-
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 .navigation-selected a {
@@ -263,7 +254,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -274,7 +264,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #ffffff;
   list-style: none;
-
   padding: 0;
   margin: 0;
 }
@@ -283,7 +272,6 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-
   border: 1px solid #ffffff;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0);
@@ -291,7 +279,6 @@ input[type="radio"].visually-hidden {
 
 .filters-button:hover {
   color: #000000;
-
   background-color: rgba(255, 255, 255, 1);
 }
 
@@ -313,7 +300,6 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-selected {
   color: #81b3d2;
-
   border: none;
 }
 
@@ -361,7 +347,6 @@ input[type="radio"].visually-hidden {
 .hotels-rating {
   color: #666666;
   text-align: center;
-
   background-color: #f2f2f2;
 }
 
@@ -408,17 +393,12 @@ input[type="radio"].visually-hidden {
 
 
 
-
-
-
 /*--------------------------сеточные стили--------------------------------РР--*/
 
 html,
 body {
   min-width: 1200px;
-
   -webkit-box-sizing: border-box;
-
   box-sizing: border-box;
 }
 
@@ -463,6 +443,7 @@ body {
 
 .site-navigation-list li {
   width: 23%;
+  cursor: pointer;
 }
 
 .site-navigation-list .navigation-left-info {
@@ -482,7 +463,6 @@ body {
   text-align: right;
   margin: 0;
 }
-
 
 .container {
   width: 1200px;
@@ -515,9 +495,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-
   -ms-flex-wrap: wrap;
-
   flex-wrap: wrap;
 }
 
@@ -551,7 +529,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   width: 400px;
 }
 
@@ -583,7 +560,7 @@ body {
 }
 
 .causes-item h3 {
-  width: 151px;
+  width: 160px;
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
@@ -595,8 +572,12 @@ body {
   padding: 0;
 }
 
-.item-3-5 p {
+.item-3-4 p {
   width: 261px;
+}
+
+.item-5 p {
+  width: 259px;
 }
 
 .causes-item-picture img {
@@ -636,11 +617,8 @@ body {
 .quality-list {
   margin: 0px;
   padding: 0px;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
 }
 
@@ -662,13 +640,11 @@ body {
 
 .quality-item:first-child::after {
   content: "";
-
   position: absolute;
   top: 60px;
   left: 162px;
   width: 75px;
   height: 72px;
-
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -676,13 +652,11 @@ body {
 
 .quality-item:nth-child(2)::after {
   content: "";
-
   position: absolute;
   top: 61px;
   left: 163px;
   width: 74px;
   height: 70px;
-
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -690,25 +664,20 @@ body {
 
 .quality-item:last-child::after {
   content: "";
-
   position: absolute;
   top: 56px;
   left: 172x;
   right: 170px;
   width: 64px;
   height: 76px;
-
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .reservation {
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -735,7 +704,6 @@ body {
 }
 
 .form-call {
-
   width: 568px;
   padding: 31px 0px;
   margin: 0;
@@ -751,7 +719,6 @@ body {
   width: 568px;
   height: 395px;
   padding: 55px;
-
   margin: 0px auto;
   background-color: #ffffff;
 }
@@ -766,11 +733,8 @@ body {
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
   -webkit-box-sizing: border-box;
-
   box-sizing: border-box;
-
   width: 458px;
 }
 
@@ -787,11 +751,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
-
   padding: 0px;
   margin: 0px;
-
   list-style: none;
 }
 
@@ -814,6 +775,7 @@ body {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
   width: 309px;
   margin: 0;
   height: 37px;
@@ -824,31 +786,34 @@ body {
   background: #f2f2f2;
   border: none;
   border-radius: 0;
+  cursor: pointer;
   width: 37px;
   height: 37px;
 }
 
 .input-text .btn-calendar-arrival {
   position: absolute;
+  cursor: pointer;
   left: 475px;
   top: 55px;
 }
 
 .input-text .btn-calendar-departure {
   position: absolute;
+  cursor: pointer;
   left: 475px;
   top: 122px;
 }
 
-.btn-calendar path {
+.btn-calendar svg {
   fill: #cacaca;
 }
 
-.btn-calendar path:hover {
+.btn-calendar svg:hover {
   fill: #000000;
 }
 
-.btn-calendar path:active {
+.btn-calendar svg:active {
   fill: #81b3d2;
 }
 
@@ -871,6 +836,7 @@ body {
 .input-number input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  cursor: pointer;
   margin: 0;
   padding: 7px;
   width: 42px;
@@ -880,11 +846,10 @@ body {
 
 .input-text label,
 .input-number label {
-
   display: inline-block;
   min-width: 112px;
+  cursor: pointer;
   vertical-align: middle;
-
   text-align: left;
 }
 
@@ -895,10 +860,12 @@ body {
 }
 
 .number-children label {
+  cursor: pointer;
   min-width: 60px;
 }
 
 .reservation-button {
+  cursor: pointer;
   padding-top: 15px;
   padding-bottom: 17px;
 }
@@ -907,17 +874,19 @@ body {
   min-width: 37px;
   height: 37px;
   background: #f2f2f2;
+  cursor: pointer;
   border: none;
   border-radius: 0;
 }
 
 .btn {
   position: relative;
+  cursor: pointer;
 }
 
 .btn:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 3px;
   top: 18px;
@@ -927,7 +896,7 @@ body {
 
 .btn:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 3px;
   top: 18px;
@@ -970,7 +939,6 @@ body {
   width: 1200px;
 }
 
-
 .footer-container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -986,7 +954,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
   padding-top: 35px;
   padding-left: 130px;
   padding-right: 100px;
@@ -1029,6 +996,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  cursor: pointer;
   width: 46px;
   height: 48px;
 }
@@ -1065,9 +1033,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
+  cursor: pointer;
   width: 196px;
-
   margin: 0px;
   padding: 0px;
   margin-left: auto;
@@ -1096,7 +1063,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   width: 1200px;
   margin: 0;
   padding: 0;
@@ -1120,12 +1086,12 @@ body {
 
 .filter-option label {
   position: relative;
-
   display: block;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  cursor: pointer;
   user-select: none;
 }
 
@@ -1134,11 +1100,8 @@ body {
   position: absolute;
   left: -41px;
   top: 0;
-
-
   width: 23px;
   height: 23px;
-
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1149,11 +1112,8 @@ body {
   position: absolute;
   left: -41px;
   top: 0;
-
-
   width: 27px;
   height: 23px;
-
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1176,7 +1136,6 @@ body {
 
 .filter-range-title {
   margin-bottom: 10px;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
@@ -1187,18 +1146,15 @@ body {
   height: 32px;
   margin-bottom: 20px;
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 30px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -1209,7 +1165,6 @@ body {
   left: 50%;
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1218,40 +1173,35 @@ body {
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 88px;
-  padding-left: 63px;
+  width: 82px;
+  padding-left: 64px;
 }
 
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font-size: 16px;
   line-height: 21px;
   min-height: 30px;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
@@ -1260,7 +1210,6 @@ body {
   top: -9px;
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -1283,14 +1232,16 @@ body {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 84px;
   padding: 6px 35px;
-
+  width: 137px;
+  font: inherit;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -1336,13 +1287,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   margin: 0px;
   padding: 0px;
 }
 
 .breadcrumbs li {
   margin-right: 33px;
+  cursor: pointer;
 }
 
 .icon-dir {
@@ -1355,10 +1306,10 @@ body {
 .icon-up-dir {
   width: 11px;
   height: 10px;
-
   position: absolute;
   top: 8px;
   left: 1093px;
+  cursor: pointer;
 }
 
 .icon-up-dir path:hover {
@@ -1398,7 +1349,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-
   margin: 0 auto;
   padding: 0px;
 }
@@ -1424,7 +1374,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1467,6 +1416,7 @@ body {
 .hotel-btn a {
   padding: 3px 16px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .hotel-rating-column {
@@ -1491,7 +1441,6 @@ body {
   box-sizing: border-box;
   padding: 0px;
   min-width: 110px;
-
   padding: 3px 13px;
 }
 
@@ -1510,7 +1459,5 @@ body {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-
-
   list-style: none;
 }
