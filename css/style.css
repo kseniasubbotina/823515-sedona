@@ -828,13 +828,13 @@ body {
   height: 37px;
 }
 
-.input-text .btn-calendar-arrival: {
+.input-text .btn-calendar-arrival {
   position: absolute;
   left: 475px;
   top: 55px;
 }
 
-.input-text .btn-calendar-departure: {
+.input-text .btn-calendar-departure {
   position: absolute;
   left: 475px;
   top: 122px;
@@ -1139,7 +1139,7 @@ body {
   width: 23px;
   height: 23px;
 
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1154,7 +1154,7 @@ body {
   width: 27px;
   height: 23px;
 
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
