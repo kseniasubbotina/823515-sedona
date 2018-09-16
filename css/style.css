@@ -554,6 +554,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   width: 400px;
   padding-top: 47px;
   padding-bottom: 60px;
@@ -572,6 +573,9 @@ body {
   padding: 0;
 }
 
+.item-2 h3 {
+  width: 170px;
+}
 .item-3-4 p {
   width: 264px;
 }
@@ -688,16 +692,18 @@ body {
   align-items: center;
   position: relative;
 }
-
-.reservation-paragraph {
-  width: 436px;
-  margin-bottom: 46px;
-}
-
 .reservation-paragraph p {
   margin: 0px;
   padding: 0px;
 }
+
+.reservation-paragraph {
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 46px;
+}
+
+
 
 .reservation-paragraph .as-header {
   margin-bottom: 25px;
