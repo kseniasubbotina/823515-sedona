@@ -13,6 +13,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .shadow {
   box-shadow: 0 0 30px 10px #dbdbdb;
   width: 1200px;
@@ -47,9 +48,11 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.site-navigation-list  {
+
+.site-navigation-list {
   background-color: #ffffff;
 }
+
 .site-navigation-list a {
   color: #000000;
   background-color: #ffffff;
@@ -62,9 +65,11 @@ input[type="radio"].visually-hidden {
 .site-navigation-list a:active {
   color: #b2b2b2;
 }
+
 .container {
   background-color: #ffffff;
 }
+
 .container h1 {
   font-size: 21px;
   text-align: center;
@@ -235,6 +240,7 @@ input[type="radio"].visually-hidden {
 
 
 
+
 /*---------------здесь начинаетя стилизация страницы hotels----------------------*/
 
 .navigation-selected a {
@@ -389,6 +395,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 110px;
 }
+
 
 
 
@@ -576,12 +583,17 @@ body {
 .item-2 h3 {
   width: 170px;
 }
+
 .item-3-4 p {
   width: 264px;
 }
 
 .item-5 p {
   width: 259px;
+}
+
+.item-5 h3 {
+  width: 130px;
 }
 
 .causes-item-picture img {
@@ -670,7 +682,7 @@ body {
   content: "";
   position: absolute;
   top: 56px;
-  left: 172x;
+  left: 172px;
   right: 170px;
   width: 64px;
   height: 76px;
@@ -692,6 +704,7 @@ body {
   align-items: center;
   position: relative;
 }
+
 .reservation-paragraph p {
   margin: 0px;
   padding: 0px;
