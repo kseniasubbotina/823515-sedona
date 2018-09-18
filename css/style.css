@@ -1132,7 +1132,7 @@ body {
   background-position: 0 0;
 }
 .filter-input-checkbox:disabled+label::before {
-    background-image: url("../img/checkbox-off—disable.svg");
+    background-image: url("../img/checkbox-off-disable.svg");
     cursor: default;
 }
 
@@ -1149,7 +1149,7 @@ body {
 }
 
 .filter-input-checkbox:checked:disabled+label::before {
-    background-image: url("../img/checkbox-on—disable.svg");
+    background-image: url("../img/checkbox-on-disable.svg");
     cursor: default;
 }
 
