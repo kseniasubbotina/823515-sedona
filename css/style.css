@@ -8,6 +8,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  position: relative;
 }
 
 a {
@@ -206,10 +207,16 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-align: center;
-  background-color: rgba(254, 254, 254, 0.9);
+
+}
+.main-footer-index {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
-.main-footer-index {
+.footer-container {
   font-weight: 400;
   color: #000000;
   text-align: center;
@@ -903,7 +910,7 @@ body {
   cursor: pointer;
 }
 
-.btn:before {
+.btn::before {
   position: absolute;
   content: "";
   width: 12px;
@@ -913,7 +920,7 @@ body {
   background: #a9a9a9;
 }
 
-.btn:after {
+.btn::after {
   position: absolute;
   content: "";
   width: 12px;
@@ -926,17 +933,17 @@ body {
   transform: rotate(-90deg)
 }
 
-.btn-minus:after {
+.btn-minus::after {
   content: none;
 }
 
-.btn:hover:after,
-.btn:hover:before {
+.btn:hover::after,
+.btn:hover::before {
   background-color: #000000;
 }
 
-.btn:active:after,
-.btn:active:before {
+.btn:active::after,
+.btn:active::before {
   background-color: #81b3d2;
 }
 
@@ -944,7 +951,6 @@ body {
   width: 1200px;
   margin-bottom: 0px;
   height: 593px;
-  background: url("../img/map.jpg");
 }
 
 .main-footer-index {
@@ -1119,11 +1125,15 @@ body {
   position: absolute;
   left: -41px;
   top: 0;
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+.filter-input-checkbox:disabled+label::before {
+    background-image: url("../img/checkbox-off—disable.svg");
+    cursor: default;
 }
 
 .filter-input-checkbox:checked+label::before {
@@ -1132,10 +1142,15 @@ body {
   left: -41px;
   top: 0;
   width: 27px;
-  height: 23px;
+  height: 27px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:checked:disabled+label::before {
+    background-image: url("../img/checkbox-on—disable.svg");
+    cursor: default;
 }
 
 .filter-infr {
@@ -1265,6 +1280,10 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+}
+.btn-transparent:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .sorting {
