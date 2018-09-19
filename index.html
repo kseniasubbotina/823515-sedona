@@ -8,10 +8,11 @@
 
 <!--главная навигация сайта-->
   <header class="main-header">
+
     <nav class="site-navigation">
       <!--логотип сайта-->
-      <div class="logo">
-        <a class="main-header-logo" href="index.html" aria-label="Нажмите, для перехода на главную страницу">
+      <div class="site-navigation-logo">
+        <a href="index.html" aria-label="Нажмите, для перехода на главную страницу">
          <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип городка Седона">
         </a>
       </div>
@@ -19,10 +20,11 @@
         <li><a href="#" aria-label="Нажмите, что бы узнать подробную информацию о городке">Информация</a></li>
         <li><a href="#" aria-label="Нажмите, для перехода в галерею">Фото и видео</a></li>
         <li><a href="#" aria-label="Нажмите, что бы рассмотреть Седону на карте">Карта штата</a></li>
-        <li class="site-navigation-selected"><a href="#" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
+        <li><a href="#" aria-label="Нажмите, для поиска гостиницы в Седоне">Гостиницы</a></li>
       </ul>
      </nav>
    </header>
+
 <!--Основное содержимое сайта-->
      <main class="container">
        <h1>Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -91,25 +93,25 @@
             <p> Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
 <!--форма бронирования-->
-            <form class="reservation-form" method="post">
+            <form class="reservation-form" method="post" action="htpps://echo.htmlacademy.ru">
               <h3>Поиск гостиницы в Седоне</h3>
               <label>
                 Дата заезда:
-                <input type="date" name="arrival-date" class="reservation-form-date">
+                <input type="date" name="arrival-date" class="date">
               </label>
               <label>
                 Дата выезда:
-               <input type="date" name="departure-date" class="reservation-form-date">
+               <input type="date" name="departure-date" class="date">
              </label>
              <label>
                Взрослые:
-               <input type="number" name="adults">
+               <input type="number" name="adults" class="people">
              </label>
              <label>
                Дети:
-               <input type="number" name="children">
+               <input type="number" name="children" class="people">
              </label>
-             <a class="button reservation-button" href="#" aria-label="Нажмите, и мы подберем Вам место для ночлега" >Найти</a>
+             <button type="submit" class="reservation-button" href="#" aria-label="Нажмите, и мы подберем Вам место для ночлега" >Найти</a>
            </form>
           </section>
 <!--карта-->
@@ -124,16 +126,16 @@
 
           <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#" aria-label="Наш Вконтакте">Вконтакте</a></li>
-              <li><a class="social-button" href="#" aria-label="Наш Фейсбук">Фейсбук</a></li>
-              <li><a class="social-button" href="#" aria-label="Наш Ютуб">Ютуб</a></li>
+              <li><a class="social-btn vk" href="#" aria-label="Наш Вконтакте">Вконтакте</a></li>
+              <li><a class="social-btn facebook" href="#" aria-label="Наш Фейсбук">Фейсбук</a></li>
+              <li><a class="social-btn youtube" href="#" aria-label="Наш Ютуб">Ютуб</a></li>
             </ul>
           </div>
 
           <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Нажмите, для перехода на страницу Html Academy">
             Website by                
             <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Html Academy-logo">
-           </a>
+          </a>
           
         </footer>
 
