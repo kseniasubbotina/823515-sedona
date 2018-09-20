@@ -207,8 +207,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #000000;
   text-align: center;
-
 }
+
 .main-footer-index {
   position: absolute;
   bottom: 0;
@@ -243,6 +243,7 @@ input[type="radio"].visually-hidden {
   color: #82b2cf;
   background-color: #5496bd;
 }
+
 
 
 
@@ -402,6 +403,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding: 110px;
 }
+
 
 
 
@@ -1108,10 +1110,16 @@ body {
   margin-bottom: 25px;
   padding-left: 40px;
 }
+
 .filter-input-checkbox:focus+label {
   opacity: 0.5;
 }
+
 .filter-input-checkbox:active+label {
+  opacity: 1;
+}
+
+.filter-input-checkbox:hover+label {
   opacity: 1;
 }
 
@@ -1137,9 +1145,10 @@ body {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .filter-input-checkbox:disabled+label::before {
-    background-image: url("../img/checkbox-off-disable.svg");
-    cursor: default;
+  background-image: url("../img/checkbox-off-disable.svg");
+  cursor: default;
 }
 
 .filter-input-checkbox:checked+label::before {
@@ -1155,8 +1164,8 @@ body {
 }
 
 .filter-input-checkbox:checked:disabled+label::before {
-    background-image: url("../img/checkbox-on-disable.svg");
-    cursor: default;
+  background-image: url("../img/checkbox-on-disable.svg");
+  cursor: default;
 }
 
 .filter-infr {
@@ -1287,6 +1296,7 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
 .btn-transparent:hover {
   background-color: #ffffff;
   color: #000000;
