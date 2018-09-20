@@ -1112,11 +1112,13 @@ body {
 }
 
 .filter-input-checkbox:focus+label {
-  opacity: 0.5;
+  outline: 2px solid;
+  outline-color: rgba(166, 199, 255, 0.7);
 }
 
 .filter-input-checkbox:active+label {
-  opacity: 1;
+ outline: 2px solid;
+ outline-color: rgba(166, 199, 255, 0.7);
 }
 
 .filter-input-checkbox:hover+label {
