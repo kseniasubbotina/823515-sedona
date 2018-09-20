@@ -1107,10 +1107,12 @@ body {
   position: relative;
   margin-bottom: 25px;
   padding-left: 40px;
-
 }
 .filter-input-checkbox:focus+label {
   opacity: 0.5;
+}
+.filter-input-checkbox:active+label {
+  opacity: 1;
 }
 
 .filter-option label {
