@@ -1109,9 +1109,8 @@ body {
   padding-left: 40px;
 
 }
-.filter-option:focus {
+.filter-input-checkbox:focus+label {
   opacity: 0.5;
-  outline: 1px solid white;
 }
 
 .filter-option label {
